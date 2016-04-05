@@ -1,0 +1,9 @@
+.carousel{
+	&__img{
+		width: em(90);
+		height: em(90);
+	}
+	&__item-title{
+		@extend .hidden-xs;
+	}
+}

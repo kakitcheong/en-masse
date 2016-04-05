@@ -1,0 +1,47 @@
+@import "../fonts/ss-social/ss-social.css";
+@include establish-baseline;
+////////////////////////////////////////////////////////////////////////////////
+//  typographic style                                                         //
+////////////////////////////////////////////////////////////////////////////////
+/*** 1.1 heading styles ***/
+.h1, .h2, .h3{
+	font-family: $heading__font-family;
+	font-weight: 400;
+	color: $color__grey--dark;
+}
+.h4{
+	font-family: $secondary__font-family;
+}
+.h3{
+	@include adjust-font-size-to(20px);
+}
+.h2--hero{
+	@extend .h2;
+	@include respond-to(sm-screen){
+		@include adjust-font-size-to(32px); /** temp. **/
+	}
+	@include respond-to(lg-screen){
+		@include adjust-font-size-to(96px); /** temp. **/
+	}
+}
+.h3--featured{
+	@extend .h3;
+	margin: 0 0 $el__spacer--xs 0;
+}
+.section-title{
+	@extend .h4, .pull--center;
+	color: $color__accent;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0 0 $el__spacer--xs 0;
+}
+/*** 1.2 body text styles ***/
+.paragraph{
+	color: $color__grey;
+	font-family: $base__font-family;
+	font-weight: 400;    
+}
+.paragraph--footer{
+	@extend .paragraph;
+	color: $color__blk;
+}

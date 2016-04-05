@@ -1,0 +1,34 @@
+/*** header layout ***/
+.header{
+	&__navigation{
+		@extend .container;
+	}
+}
+.main{
+	@extend .container;
+}
+.featured-products{
+	margin: 0 0 $el__spacer--xs;
+}
+/*** helper classes ***/
+.pull--center{
+	@extend .text-center;
+}
+.pull--left{
+	@extend .pull-left;
+}
+.pull--right{
+	@extend .pull-right;
+}
+.visible--mobile{
+	@extend .hidden-md, .hidden-lg; 
+}
+.visible--desktop{
+	@extend .hidden-xs, .hidden-sm;
+}
+/*** javascript hook for putting img into it's parent's background ***/
+.bg__img{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,8 @@
+.post{
+	&__img--featured{
+		height: em(180);
+	}
+	&__excerpt{
+		@extend .paragraph;
+	}
+}

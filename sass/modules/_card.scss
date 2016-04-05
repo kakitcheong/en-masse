@@ -1,0 +1,16 @@
+.card{
+	@extend .pull--center;
+	box-sizing: border-box;
+	background-color: $color__background;
+	width: 90%;
+	position: relative;
+	top: em(-36);
+	padding: em(12) em(20);
+	border: $el__border;
+	border-top: 4px solid $color__accent;
+	margin: 0 auto;
+	&__meta{
+		color: $color__grey--light;
+		@include adjust-font-size-to(12px);
+	}
+}

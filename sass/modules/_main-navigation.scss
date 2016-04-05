@@ -1,0 +1,39 @@
+.main-navigation{
+	overflow: hidden;
+	max-height: 0;
+	@extend .pull--center;
+	border-bottom: $el__border;
+	@include transition(max-height, 0.4s, ease-in-out);
+	@include respond-to(md-screen){
+		border-top: $el__border;
+	}
+	&__item{
+		display: inline;
+	}
+	&__link{
+		display: inline-block;
+		color: $color__grey--dark;
+		font-family: $secondary__font-family;
+		font-weight: 700;
+		@include adjust-font-size-to(13px);
+		letter-spacing: em(1);
+		text-transform: uppercase;
+		width: 100%;
+		padding: em(9) 0;
+		@include respond-to(md-screen){
+			width: auto;
+			padding: em(22) em(25);
+		}
+	}
+	&__link--alpha{
+		@extend .main-navigation__link;
+		padding-top: 0;
+	}
+	&__link--omega{
+		@extend .main-navigation__link;
+		@include trailer();
+	}
+	&__link:hover{
+		
+	}
+}

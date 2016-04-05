@@ -1,0 +1,6 @@
+.featured-list{
+	&__post{
+		@extend .col-xs-12;
+		padding: 0;
+	}
+}
