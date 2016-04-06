@@ -57,8 +57,8 @@
                 <div class="navigation-header__masthead">
                     <a href="#"> <!-- link to home -->
                         <picture>
-                            <source srcset="images/global/mastheads/masthead-xs.svg" media="(max-width:768px)"> <!-- x-small logo -->
-                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:769px)"> <!-- small logo -->
+                            <source srcset="images/global/mastheads/masthead-xs.svg" media="(max-width:767px)"> <!-- x-small logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:768px)"> <!-- small logo -->
                             <source srcset="images/global/mastheads/masthead-md.svg" media="(min-width:992px)"> <!-- medium logo -->
                             <img src="images/global/mastheads/masthead-xs.svg" alt="">  
                         </picture>
@@ -79,31 +79,38 @@
         </header> <!-- /.header -->
         <main class="main">
             <section class="feature-posts">
-                <div class="hero-carousel">
-                    <div class="hero-carousel__item">
-                        <div class="hero-carousel-slide">
-                            <div class="hero-carousel-slide__img">
-                                <img src="images/posts/featured/featured-dummy-001.jpg" alt="featured dummy 001">
-                            </div> <!-- /.hero-carousel-slide__img -->
-                            <div class="hero-carousel-slide__overlay"></div>
-                            <div class="hero-carousel-slide__post-category">
-                                <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
-                            </div> <!-- /.hero-carousel-slide__post-category --> 
-                            <div class="hero-carousel-slide__post-title">
-                                <h2 class="h2--hero"><a href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></h2>
-                            </div> <!-- /.hero-carousel-slide__post-title --> 
-                            <div class="hero-carousel-slide__post-meta">
-                                <span>17 MAR 2016</span>
-                            </div>
-                        </div>
-                    </div> <!-- /.hero-carousel__item -->
-                </div> <!-- /.hero-carousel -->
-                <div class="featured-list">
-                    <div class="featured-list__post">
-                        <div class="post--featured">
+                <div class="row">
+                    <div class="hero-carousel">
+                        <div class="hero-carousel__item">
+                            <div class="hero-carousel-slide">
+                                <div class="hero-carousel-slide__img bg__img">
+                                    <div>
+                                        <img src="images/posts/featured/featured-dummy-001.jpg" alt="featured dummy 001">
+                                    </div>
+                                </div> <!-- /.hero-carousel-slide__img -->
+                                <div class="hero-carousel-slide__overlay"></div>
+                                <div class="hero-carousel-slide__container">
+                                    <div class="hero-carousel-slide__post-category">
+                                        <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
+                                    </div> <!-- /.hero-carousel-slide__post-category --> 
+                                    <div class="hero-carousel-slide__post-title">
+                                        <h2 class="h2--hero"><a href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></h2>
+                                    </div> <!-- /.hero-carousel-slide__post-title --> 
+                                    <div class="hero-carousel-slide__meta">
+                                        <iron-icon src="images/global/icons/clock-16px-lighter.svg"></iron-icon>
+                                        <span>17 MAR 2016</span>
+                                    </div> <!-- /.hero-carousel-slide__post-meta -->
+                                </div> <!-- /.hero-carousel-slide__container -->
+                            </div> <!-- /.hero-carousel-slide -->
+                        </div> <!-- /.hero-carousel__item -->
+                    </div> <!-- /.hero-carousel -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="featured-list">
+                        <div class="featured-list__post">
                             <div class="post__img--featured bg__img">
                                 <a href="#"><img src="images/posts/featured/featured-dummy-001.jpg" alt="featured dummy 001"></a>
-                            </div> <!-- /.post-card__img -->
+                            </div> <!-- /.post__img--featured -->
                             <div class="post__card card">
                                 <div class="card__title">
                                     <h3 class="h3--featured"><a href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></h3>
@@ -111,15 +118,13 @@
                                 <div class="card__meta">
                                     <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                                     <span>17 MAR 2016</span>
-                                </div>
+                                </div> <!-- /.card__meta -->
                             </div> <!-- /.post__card -->
-                        </div> <!-- /.post-card--featured -->
-                    </div> <!-- /.featured-list__post -->
-                    <div class="featured-list__post">
-                        <div class="post--featured">
+                        </div> <!-- /.featured-list__post -->
+                        <div class="featured-list__post">
                             <div class="post__img--featured bg__img">
                                 <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>
-                            </div> <!-- /.post-card__img -->
+                            </div> <!-- /.post__img--featured -->
                             <div class="post__card card">
                                 <div class="card__title">
                                     <h3 class="h3--featured"><a href="#">Facts about National Parks all around The World</a></h3>
@@ -127,15 +132,13 @@
                                 <div class="card__meta">
                                     <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                                     <span>20 FEB 2016</span>
-                                </div>
+                                </div> <!-- /.card__meta -->
                             </div> <!-- /.post__card -->
-                        </div> <!-- /.post-card--featured -->
-                    </div> <!-- /.featured-list__post -->
-                    <div class="featured-list__post">
-                        <div class="post--featured">
+                        </div> <!-- /.featured-list__post -->
+                        <div class="featured-list__post">
                             <div class="post__img--featured bg__img">
                                 <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>
-                            </div> <!-- /.post-card__img -->
+                            </div> <!-- /.post__img--featured -->
                             <div class="post__card card">
                                 <div class="card__title">
                                     <h3 class="h3--featured"><a href="#">World’s Craziest Tasting Menus which You Simply have to try</a></h3>
@@ -143,15 +146,13 @@
                                 <div class="card__meta">
                                     <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                                     <span>18 JAN 2016</span>
-                                </div>
+                                </div> <!-- /.card__meta -->
                             </div> <!-- /.post__card -->
-                        </div> <!-- /.post-card--featured -->
-                    </div> <!-- /.featured-list__post -->
-                    <div class="featured-list__post">
-                        <div class="post--featured">
+                        </div> <!-- /.featured-list__post -->
+                        <div class="featured-list__post">
                             <div class="post__img--featured bg__img">
                                 <a href="#"><img src="images/posts/featured/featured-dummy-004.jpg" alt="featured dummy 004"></a>
-                            </div> <!-- /.post-card__img -->
+                            </div> <!-- /.post__img--featured -->
                             <div class="post__card card">
                                 <div class="card__title">
                                     <h3 class="h3--featured"><a href="#">Decoration Ideas for Your New Home Sweet Home</a></h3>
@@ -159,11 +160,11 @@
                                 <div class="card__meta">
                                     <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                                     <span>12 JAN 2016</span>
-                                </div>
+                                </div> <!-- /.card__meta -->
                             </div> <!-- /.post__card -->
-                        </div> <!-- /.post-card--featured -->
-                    </div> <!-- /.featured-list__post -->
-                </div> <!-- /.featured-list -->
+                        </div> <!-- /.featured-list__post -->
+                    </div> <!-- /.featured-list -->
+                </div> <!-- /.row -->
             </section> <!-- /.feature-posts -->
             <!-- owl carousel for featured products -->
             <section class="featured-products">
@@ -220,12 +221,12 @@
                     latest articles
                 </div> <!-- /.section-title -->
                 <article class="post">
-                    <div class="post__img">
+                    <div class="post__label">
+                        <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
+                    </div> <!-- /.post__label -->
+                    <div class="post__img bg__img">
                         <a href="#"><img src="images/posts/latest/latest-dummy-001.jpg" alt="Latest Post Dummy 001"></a>
                     </div> <!-- /.post__img -->
-                    <div class="post__label">
-                        <h4 class="h4--reversed"><a href="#">lifestyle</a></h4>
-                    </div> <!-- /.post__label -->
                     <div class="post__title">
                         <h3 class="h3"><a href="#">Is The New Android Wear that good?</a></h3>
                     </div> <!-- /.post__title -->
@@ -233,17 +234,17 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
                     </p> <!-- /.post__excerpt -->
                     <div class="post__meta">
-                        <!-- insert clock icon here -->
+                        <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                         <span>12 MAR 2016</span>
                     </div> <!-- /.post__meta -->
                 </article> <!-- /.post -->
                 <article class="post">
-                    <div class="post__img">
+                    <div class="post__label">
+                        <h4 class="h4--reversed"><a class="post__cat-link" href="#">trending</a></h4>
+                    </div> <!-- /.post__label -->
+                    <div class="post__img bg__img">
                         <a href="#"><img src="images/posts/latest/latest-dummy-002.jpg" alt="Latest Post Dummy 002"></a>
                     </div> <!-- /.post__img -->
-                    <div class="post__label">
-                        <h4 class="h4--reversed"><a href="#">trending</a></h4>
-                    </div> <!-- /.post__label -->
                     <div class="post__title">
                         <h3 class="h3"><a href="#">Top Five Places to have Breakfast in Berlin</a></h3>
                     </div> <!-- /.post__title -->
@@ -251,17 +252,17 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
                     </p> <!-- /.post__excerpt -->
                     <div class="post__meta">
-                        <!-- insert clock icon here -->
+                        <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                         <span>8 MAR 2016</span>
                     </div> <!-- /.post__meta -->
                 </article> <!-- /.post -->
                 <article class="post">
-                    <div class="post__img">
+                    <div class="post__label">
+                        <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
+                    </div> <!-- /.post__label -->
+                    <div class="post__img bg__img">
                         <a href="#"><img src="images/posts/latest/latest-dummy-003.jpg" alt="Latest Post Dummy 003"></a>
                     </div> <!-- /.post__img -->
-                    <div class="post__label">
-                        <h4 class="h4--reversed"><a href="#">lifestyle</a></h4>
-                    </div> <!-- /.post__label -->
                     <div class="post__title">
                         <h3 class="h3"><a href="#">What Your Working Desk shows about Your ersonality</a></h3>
                     </div> <!-- /.post__title -->
@@ -269,17 +270,17 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
                     </p> <!-- /.post_excerpt -->
                     <div class="post__meta">
-                        <!-- insert clock icon here -->
+                        <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                         <span>2 MAR 2016</span>
                     </div> <!-- /.post__meta --> 
                 </article> <!-- /.post -->
                 <article class="post">
-                    <div class="post__img">
+                    <div class="post__label">
+                        <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
+                    </div> <!-- /.post__label -->
+                    <div class="post__img bg__img">
                         <a href="#"><img src="images/posts/latest/latest-dummy-004.jpg" alt="Latest Post Dummy 004"></a>
                     </div> <!-- /.post__img -->
-                    <div class="post__label">
-                        <h4 class="h4--reversed"><a href="#">lifestyle</a></h4>
-                    </div> <!-- /.post__label -->
                     <div class="post__title">
                         <h3 class="h3"><a href="#">How to find a Friend for Your Next Camping Adventure</a></h3>
                     </div> <!-- /.post__title -->
@@ -287,11 +288,11 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
                     </p> <!-- /.post__excerpt -->
                     <div class="post__meta">
-                        <!-- insert clock icon here -->
+                        <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                         <span>27 FEB 2016</span>
                     </div> <!-- /.post__meta -->
                 </article> <!-- /.post -->
-                <div class="center">
+                <div class="center__btn">
                     <a href="#" class="btn--default">load more posts</a>
                 </div> <!-- /.center -->
             </section> <!-- /.latest-articles -->
@@ -398,105 +399,109 @@
                         newsletter
                     </div> <!-- /.section-title--centered -->
                     <div class="widget__description--centered">
-                        <p>Donec maximus gravida justo vel facilisis. Proin pulvinar, at iaculis felis.</p>    
+                        <p class="paragraph">Donec maximus gravida justo vel facilisis. Proin pulvinar, at iaculis felis.</p>    
                     </div> <!-- /.widget__description -->
                     <div class="widget__form">
                         <form class="base-form" action="">
                             <input type="email" class="base-form__item--full" id="emailInput" placeholder="Your email address">
-                            <button type="submit" class="btn--primary">subscribe</button>
+                            <button type="submit" class="base-form__item--full btn--primary">subscribe</button>
                         </form> <!-- /.base-form -->
                     </div> <!-- /.widget__form -->
                 </div> <!-- /.widget--newsletter -->
             </aside>
             <section class="mobile-social">
-                <ul class="h-list">
-                    <li class="h-list__item"><a href="#">facebook</a></li>
-                    <li class="h-list__item"><a href="#">instagram</a></li>
-                    <li class="h-list__item"><a href="#">twitter</a></li>
+                <ul class="h-list center">
+                    <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">facebook</a></li>
+                    <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">instagram</a></li>
+                    <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">twitter</a></li>
                 </ul> <!-- /.h-list -->   
             </section> <!-- /.mobile-social -->
         </main>
-        <footer>
+        <footer class="footer">
             <section class="footer-top">
-                <div class="social-nav--footer">
-                    <ul class="h-list">
-                        <li class="h-list__item"><a href="#">facebook</a></li>
-                        <li class="h-list__item"><a href="#">instagram</a></li>
-                        <li class="h-list__item"><a href="#">twitter</a></li>
-                    </ul> <!-- /.h-list -->    
-                </div> <!-- /.social-nav--footer -->
-                <div class="instagram-feed">
-                    <ul class="gallery">
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/001.jpg" alt="001">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/002.jpg" alt="002">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/003.jpg" alt="003">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/004.jpg" alt="004">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/005.jpg" alt="005">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/006.jpg" alt="006">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/007.jpg" alt="007">
-                        </li> <!-- /.gallery__item--instagram -->
-                        <li class="gallery__item--instagram">
-                            <img src="images/instagram/008.jpg" alt="008">
-                        </li> <!-- /.gallery__item--instagram -->   
-                    </ul> <!-- /.gallery -->       
-                </div> <!-- /.instagram-feed -->
-                <div class="about">
-                    <div class="section-title">
-                        about us
-                    </div> <!-- /.section-title -->
-                    <p class="paragraph--footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam excepturi autem magnam natus, doloribus totam cupiditate labore et ea. Quidem, explicabo, quia pariatur saepe mollitia sunt. Dolore aliquam tempore est!</p>
-                </div> <!-- /.about -->
-                <div class="form--footer">
-                    <div class="section-title">
-                        newsletter
-                    </div> <!-- /.section-title -->
-                    <p class="paragraph--footer">Donec maximus gravida justo vel facilisis. Proin pulvinar, at iaculis felis.</p>
-                    <form class="base-form" action="">
-                        <input type="email" class="base-form__item" id="emailInput" placeholder="Your email address">
-                        <button type="submit" class="btn--primary">subscribe</button>
-                    </form> <!-- /.base-form -->    
-                </div> <!-- /.form -->
-                <div class="sub-nav--footer">
-                    <div class="section-title">
-                        categories
-                    </div> <!-- /.section-title -->
-                    <nav>
-                        <ul class="v-list">
-                            <li class="v-list__item"><a href="#">trending</a></li>
-                            <li class="v-list__item"><a href="#">art & design</a></li>
-                            <li class="v-list__item"><a href="#">lifestyle</a></li>
-                            <li class="v-list__item"><a href="#">fashion</a></li>
-                        </ul> <!-- /.v-list -->
-                    </nav>
-                    <nav>
-                        <ul class="v-list">
-                            <li class="v-list__item"><a href="#">shop</a></li>
-                            <li class="v-list__item"><a href="#">about</a></li>
-                            <li class="v-list__item"><a href="#">contact us</a></li>
-                        </ul> <!-- /.v-list -->
-                    </nav>
-                </div> <!-- /.sub-nav-footer -->
+                <div class="footer-top__innner">
+                    <div class="social-nav--footer">
+                        <ul class="h-list">
+                            <li class="h-list__item"><a href="#">facebook</a></li>
+                            <li class="h-list__item"><a href="#">instagram</a></li>
+                            <li class="h-list__item"><a href="#">twitter</a></li>
+                        </ul> <!-- /.h-list -->    
+                    </div> <!-- /.social-nav--footer -->
+                    <div class="instagram-feed">
+                        <ul class="gallery">
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/001.jpg" alt="001">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/002.jpg" alt="002">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/003.jpg" alt="003">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/004.jpg" alt="004">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/005.jpg" alt="005">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/006.jpg" alt="006">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/007.jpg" alt="007">
+                            </li> <!-- /.gallery__item--instagram -->
+                            <li class="gallery__item--instagram">
+                                <img src="images/instagram/008.jpg" alt="008">
+                            </li> <!-- /.gallery__item--instagram -->   
+                        </ul> <!-- /.gallery -->       
+                    </div> <!-- /.instagram-feed -->
+                    <div class="about">
+                        <div class="section-title">
+                            about us
+                        </div> <!-- /.section-title -->
+                        <p class="paragraph--footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam excepturi autem magnam natus, doloribus totam cupiditate labore et ea. Quidem, explicabo, quia pariatur saepe mollitia sunt. Dolore aliquam tempore est!</p>
+                    </div> <!-- /.about -->
+                    <div class="form--footer">
+                        <div class="section-title">
+                            newsletter
+                        </div> <!-- /.section-title -->
+                        <p class="paragraph--footer">Donec maximus gravida justo vel facilisis. Proin pulvinar, at iaculis felis.</p>
+                        <form class="base-form" action="">
+                            <input type="email" class="base-form__item" id="emailInput" placeholder="Your email address">
+                            <button type="submit" class="btn--primary">subscribe</button>
+                        </form> <!-- /.base-form -->    
+                    </div> <!-- /.form -->
+                    <div class="sub-nav--footer">
+                        <div class="section-title">
+                            categories
+                        </div> <!-- /.section-title -->
+                        <nav>
+                            <ul class="v-list">
+                                <li class="v-list__item"><a href="#">trending</a></li>
+                                <li class="v-list__item"><a href="#">art & design</a></li>
+                                <li class="v-list__item"><a href="#">lifestyle</a></li>
+                                <li class="v-list__item"><a href="#">fashion</a></li>
+                            </ul> <!-- /.v-list -->
+                        </nav>
+                        <nav>
+                            <ul class="v-list">
+                                <li class="v-list__item"><a href="#">shop</a></li>
+                                <li class="v-list__item"><a href="#">about</a></li>
+                                <li class="v-list__item"><a href="#">contact us</a></li>
+                            </ul> <!-- /.v-list -->
+                        </nav>
+                    </div> <!-- /.sub-nav-footer -->
+                </div> <!-- /.footer-top__inner -->
             </section> <!-- /.footer-top -->
             <section class="footer-bottom">
-                <div class="logo-alt">
-                    <img src="images/global/logo-alt.svg" alt="Logo Alt">
-                </div> <!-- /.logo-alt -->
-                <div class="footer-copy">
-                    <p class="paragraph--copy">&copy; 2016 All Rights Reserved.</p>
-                </div> <!-- /.footer-copy -->
+                <div class="footer-bottom__inner">
+                    <div class="logo-alt">
+                        <img src="images/global/logo-alt.svg" alt="Logo Alt">
+                    </div> <!-- /.logo-alt -->
+                    <div class="footer-copy">
+                        <p class="paragraph--copy">&copy; 2016 All Rights Reserved.</p>
+                    </div> <!-- /.footer-copy -->
+                </div> <!-- /.footer-bottom__inner -->
             </section> <!-- /.footer-bottom -->
         </footer>
 		<!-- jquery -->

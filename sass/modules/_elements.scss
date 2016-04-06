@@ -1,0 +1,65 @@
+/*** bottons ***/
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $secondary__font-family;
+	font-weight: 500;
+	letter-spacing: em(1);
+	padding: em(13) em(22);
+	@include border-radius(0, 0);
+	@extend .text-center;
+	&--default{
+		@extend .btn;
+		color: $color__accent;
+		border: $el__border--accent;
+	}
+	&--default:hover{
+		color: $color__wht;
+		background-color: $color__accent;
+	}
+	&--primary{
+		@extend .btn;
+		color: $color__wht;
+		background-color: $color__accent;
+	}
+}
+/*** lists ***/
+.h-list{
+	margin: 0 auto;
+	&__item{
+		display: inline;
+	}
+	&__link{
+		display: inline-block;
+		width: auto;
+	}
+}
+/*** form ***/
+.base-form{
+	&__item--full{
+		width: 100%;
+		box-sizing: border-box;
+		margin-top: $el__spacer--xs;
+	}
+}
+input{
+	font-style: italic;
+	padding: em(13) em(17);
+	border: $el__border;
+}
+input[type="email"] {
+	@include input-placeholder{
+		font-family: $secondary__font-family;
+		font-weight: 500;
+		color: $color__grey--light;
+		@include adjust-font-size-to(12px);
+	}
+}
+/*** search box ***/
+.search-box{
+	
+}
+/*** alternative logo ***/
+.logo-alt{
+	@extend .hidden-xs;
+}

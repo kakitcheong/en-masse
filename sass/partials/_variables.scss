@@ -48,7 +48,7 @@ $color__headline: $color__grey--dark;
 ////////////////////////////////////////////////////////////////////////////////
 /*** 2.1 base ***/
 $base-font-size: 16px; /*** compass vertical rhythm variable ***/
-$base-line-height: 24px; /*** compass vertical rhythm variable ***/
+$base-line-height: 6px; /*** compass vertical rhythm variable ***/
 //$base__font-size: em(16);
 //$base__line-height: em(24);
 /*** 2.2 typefaces ***/
@@ -62,4 +62,8 @@ $secondary__font-family: 'Raleway', sans-serif;
 ////////////////////////////////////////////////////////////////////////////////
 /*** 3.1 border ***/
 $el__border: 1px solid $color__border;
+$el__border--accent: 1px solid $color__accent;
+/*** 3.1 spacers ***/
 $el__spacer--xs: em(16);
+$el__spacer--sm: em(30);
+$el__spacer--md: em(45);

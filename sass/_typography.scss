@@ -1,22 +1,22 @@
 @import "../fonts/ss-social/ss-social.css";
 @include establish-baseline;
+$default-rhythm-border-style: solid $color__border;
 ////////////////////////////////////////////////////////////////////////////////
 //  typographic style                                                         //
 ////////////////////////////////////////////////////////////////////////////////
+html{
+	@include adjust-leading-to(4);
+}
 /*** 1.1 heading styles ***/
 .h1, .h2, .h3{
 	font-family: $heading__font-family;
 	font-weight: 400;
 	color: $color__grey--dark;
 }
-.h4{
-	font-family: $secondary__font-family;
-}
-.h3{
-	@include adjust-font-size-to(20px);
-}
 .h2--hero{
 	@extend .h2;
+	color: $color__grey--lighter;
+	@include trailer(2);
 	@include respond-to(sm-screen){
 		@include adjust-font-size-to(32px); /** temp. **/
 	}
@@ -24,9 +24,32 @@
 		@include adjust-font-size-to(96px); /** temp. **/
 	}
 }
-.h3--featured{
-	@extend .h3;
-	margin: 0 0 $el__spacer--xs 0;
+.h3{
+	@include adjust-font-size-to(22px);
+	&--accent{
+		font-weight: 500;
+		color: $color__accent;
+		text-transform: uppercase;
+	}
+	&--featured{
+		@extend .h3;
+		margin: 0 0 $el__spacer--xs 0;
+		@include respond-to(sm-screen){
+			@include adjust-font-size-to(14px);
+			margin: 0 0 0 0;
+			@include leader();
+		}
+	}
+}
+.h4{
+	font-family: $secondary__font-family;
+	@include adjust-font-size-to(14px);
+}
+.h4--reversed{
+	@extend .h4;
+	color: $color__reversed;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .section-title{
 	@extend .h4, .pull--center;
@@ -34,6 +57,24 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	margin: 0 0 $el__spacer--xs 0;
+	@include respond-to(sm-screen){
+		text-align: left;
+	}
+	&--centered{
+		@extend .section-title, .text-center;
+		position: relative;
+	}
+	&--centered:after{
+		content: " ";
+		background-color: $color__accent;
+		width: em(36);
+		height: em(1);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: em(-10);
+		margin: 0 auto;
+	}
 }
 /*** 1.2 body text styles ***/
 .paragraph{
@@ -44,4 +85,14 @@
 .paragraph--footer{
 	@extend .paragraph;
 	color: $color__blk;
+}
+.meta{
+	color: $color__grey--light;
+	@include adjust-font-size-to(12px);
+}
+.ss-icon{
+	padding: 0 $el__spacer--xs/4;
+	&:hover{
+		color: $color__accent;
+	}
 }

@@ -1,8 +1,38 @@
 .post{
+	margin-top: $el__spacer--xs;
 	&__img--featured{
 		height: em(180);
+		@include respond-to(sm-screen){
+			height: em(80);
+		}
+	}
+	&__img{
+		height: em(145);
+	}
+	&__label{
+		display: inline-block;
+		background-color: $color__accent;
+		padding: em(7) em(12);
+		position: relative;
+		top: em(16);
+		left: em(8);
+	}
+	&__cat-link{
+		&:hover{
+			color: $color__grey--dark;
+		}
+	}
+	&__title{
+		@include leader(2);
 	}
 	&__excerpt{
 		@extend .paragraph;
+		@include leader(1);
+		@include trailer(2);
+	}
+	&__meta{
+		color: $color__grey--light;
+		@include adjust-font-size-to(12px);
+		@include leading-border();
 	}
 }

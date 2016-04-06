@@ -2,6 +2,10 @@
 	&__img{
 		width: em(90);
 		height: em(90);
+		@include respond-to(sm-screen){
+			width: em(120);
+			height: em(120);
+		}
 	}
 	&__item-title{
 		@extend .hidden-xs;

@@ -1,14 +1,31 @@
 /*** header layout ***/
 .header{
+	@extend .container;
 	&__navigation{
-		@extend .container;
+
 	}
 }
 .main{
 	@extend .container;
 }
 .featured-products{
-	margin: 0 0 $el__spacer--xs;
+	margin: 0 0 $el__spacer--xs 0;
+	@include respond-to(sm-screen){
+		margin: $el__spacer--md 0 0 0;
+	}
+}
+.latest-articles{
+	@include respond-to(sm-screen){
+		margin: $el__spacer--md 0 0 0;
+	}
+}
+.aside{
+	margin-top: $el__spacer--sm;	
+}
+.mobile-social{
+	@extend .visible-xs;
+	@include adjust-font-size-to(24px);
+	margin-top: $el__spacer--sm;
 }
 /*** helper classes ***/
 .pull--center{
@@ -21,14 +38,22 @@
 	@extend .pull-right;
 }
 .visible--mobile{
-	@extend .hidden-md, .hidden-lg; 
+	@extend .visible-xs, .visible-sm, .hidden-md, .hidden-lg; 
 }
 .visible--desktop{
-	@extend .hidden-xs, .hidden-sm;
+	@extend .hidden-xs, .hidden-sm, .visible-md, .visible-lg;
 }
 /*** javascript hook for putting img into it's parent's background ***/
 .bg__img{
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+/*** layout elements ***/
+.center{
+	@extend .pull--center;
+	&__btn{
+		@extend .center;
+		margin-top: $el__spacer--sm;
+	}
 }

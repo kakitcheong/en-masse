@@ -1,0 +1,17 @@
+.widget{
+	@extend .hidden-xs;
+	&--newsletter{
+		padding: em(24) em(26);
+		border: $el__border;
+	}
+	&__description{
+		@include leader(2);	
+	}
+	&__description--centered{
+		@extend .widget__description, .text-center;
+		@include leader(4);
+	}
+	&__form{
+		
+	}
+}
