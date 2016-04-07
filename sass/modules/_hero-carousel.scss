@@ -30,7 +30,7 @@
 	}
 	&__meta{
 		display: block;
-		color: $color__grey--lighter;
+		color: $color__accent;
 		@include adjust-font-size-to(12px);
 		@include leading-border();
 	}

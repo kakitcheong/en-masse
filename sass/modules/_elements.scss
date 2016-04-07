@@ -55,11 +55,31 @@ input[type="email"] {
 		@include adjust-font-size-to(12px);
 	}
 }
+.form{
+	&--footer{
+		@extend .col-xs-12, .col-sm-4;
+	}
+}
 /*** search box ***/
 .search-box{
-	
+	&__input-text{
+		padding: em(4) em(8);
+	}
+	&__input-btn{
+		background-color: $color__accent;
+		position: relative;
+		left: em(-20);
+		padding: em(4) em(4);
+		border: none;
+	}
 }
 /*** alternative logo ***/
 .logo-alt{
 	@extend .hidden-xs;
+}
+/*** sub nav style ***/
+.sub-nav{
+	&--footer{
+		@extend .visible--desktop;
+	}
 }

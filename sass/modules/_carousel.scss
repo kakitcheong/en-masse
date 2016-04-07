@@ -9,5 +9,6 @@
 	}
 	&__item-title{
 		@extend .hidden-xs;
+		color: $color__grey;
 	}
 }

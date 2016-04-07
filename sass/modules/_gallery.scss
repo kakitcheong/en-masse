@@ -1,0 +1,12 @@
+.gallery{
+	&__item{
+		float: left;
+	}
+	&__item--instagram{
+		@extend .gallery__item;
+		width: em(123);
+		height: em(123);
+		margin-right: 0;
+		
+	}
+}

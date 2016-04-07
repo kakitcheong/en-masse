@@ -1734,7 +1734,6 @@ select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
 }
 
 /* line 48, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -1831,187 +1830,129 @@ hr {
   cursor: pointer;
 }
 
-/* line 9, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/*
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h2--hero, .h3, .h3--featured, .h4, .h4--reversed, .section-title, .section-title--centered, .h5, .h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-/* line 16, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, h2 small,
-h2 .small, h3 small,
-h3 .small, h4 small,
-h4 .small, h5 small,
-h5 .small, h6 small,
-h6 .small,
-.h1 small,
-.h1 .small, .h2 small, .h2--hero small,
-.h2 .small,
-.h2--hero .small, .h3 small, .h3--featured small,
-.h3 .small,
-.h3--featured .small, .h4 small, .h4--reversed small, .section-title small, .section-title--centered small,
-.h4 .small,
-.h4--reversed .small,
-.section-title .small,
-.section-title--centered .small, .h5 small,
-.h5 .small, .h6 small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
 
-/* line 24, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1,
-h2, .h2, .h2--hero,
-h3, .h3, .h3--featured {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-/* line 30, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, .h1 small,
-.h1 .small,
-h2 small,
-h2 .small, .h2 small, .h2--hero small,
-.h2 .small,
-.h2--hero .small,
-h3 small,
-h3 .small, .h3 small, .h3--featured small,
-.h3 .small,
-.h3--featured .small {
-  font-size: 65%;
-}
-
-/* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h4, .h4, .h4--reversed, .section-title, .section-title--centered,
-h5, .h5,
-h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 41, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h4 small,
-h4 .small, .h4 small, .h4--reversed small, .section-title small, .section-title--centered small,
-.h4 .small,
-.h4--reversed .small,
-.section-title .small,
-.section-title--centered .small,
-h5 small,
-h5 .small, .h5 small,
-.h5 .small,
-h6 small,
-h6 .small, .h6 small,
-.h6 .small {
-  font-size: 75%;
-}
-
-/* line 47, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1 {
-  font-size: 36px;
-}
-
-/* line 48, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h2, .h2, .h2--hero {
-  font-size: 30px;
-}
-
-/* line 49, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h3, .h3, .h3--featured {
-  font-size: 24px;
-}
-
-/* line 50, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h4, .h4, .h4--reversed, .section-title, .section-title--centered {
-  font-size: 18px;
-}
-
-/* line 51, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h5, .h5 {
-  font-size: 14px;
-}
-
-/* line 52, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-h6, .h6 {
-  font-size: 12px;
-}
-
-/* line 58, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-p {
-  margin: 0 0 10px;
-}
-
-/* line 62, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-.lead {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-@media (min-width: 768px) {
-  /* line 62, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-  .lead {
-    font-size: 21px;
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $headings-small-color;
   }
 }
 
-/* line 78, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+.lead {
+  margin-bottom: $line-height-computed;
+  font-size: floor(($font-size-base * 1.15));
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: ($font-size-base * 1.5);
+  }
+}
+
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
 small,
 .small {
-  font-size: 85%;
+  font-size: floor((100% * $font-size-small / $font-size-base));
 }
 
-/* line 83, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 mark,
 .mark {
-  background-color: #fcf8e3;
+  background-color: $state-warning-bg;
   padding: .2em;
 }
-
-/* line 90, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+*/
+/* line 92, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 91, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 93, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 92, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
-.text-center, .section-title--centered, .pull--center, .section-title, .center, .center__btn, .navigation-header__masthead, .main-navigation, .card, .footer-copy, .widget__description--centered, .btn, .btn--default, .btn--primary {
+/* line 94, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+.text-center, .section-title--centered, .pull--center, .section-title, .section-title--no-spacer, .center, .center__btn, .navigation-header__masthead, .main-navigation, .footer__social, .footer-copy, .card, .widget__description--centered, .btn, .btn--default, .btn--primary {
   text-align: center;
 }
 
-/* line 93, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 95, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 94, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 96, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-nowrap {
   white-space: nowrap;
 }
 
-/* line 97, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 99, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-lowercase {
   text-transform: lowercase;
 }
 
-/* line 98, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 100, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-uppercase, .initialism {
   text-transform: uppercase;
 }
 
-/* line 99, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 101, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-capitalize {
   text-transform: capitalize;
 }
 
-/* line 102, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 104, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .text-muted {
   color: #777777;
 }
@@ -2071,7 +2012,7 @@ a.text-danger:focus {
   color: #843534;
 }
 
-/* line 119, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 121, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .bg-primary {
   color: #fff;
 }
@@ -2131,20 +2072,20 @@ a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 
-/* line 138, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 140, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 149, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 151, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 153, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 155, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
 ul ol,
 ol ul,
@@ -2152,43 +2093,43 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* line 167, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 169, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 173, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 175, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-/* line 177, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 179, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 185, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 187, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 189, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 191, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 dt,
 dd {
   line-height: 1.42857;
 }
 
-/* line 193, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 195, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 196, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 198, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 dd {
   margin-left: 0;
 }
@@ -2203,7 +2144,7 @@ dd {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 211, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  /* line 213, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -2213,38 +2154,38 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 218, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  /* line 220, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   .dl-horizontal dd {
     margin-left: 180px;
   }
 }
 
-/* line 229, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 231, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
 
-/* line 235, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 237, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .initialism {
   font-size: 90%;
 }
 
-/* line 241, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 243, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
-/* line 250, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 252, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 257, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 259, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -2253,63 +2194,56 @@ blockquote .small {
   line-height: 1.42857;
   color: #777777;
 }
-/* line 265, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 267, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
 
-/* line 274, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 276, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse,
 blockquote.pull-right,
 blockquote.pull--right,
-blockquote.navigation-header__cart,
-blockquote.navigation-header__search-box {
+blockquote.navigation-header__cart {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
   border-left: 0;
   text-align: right;
 }
-/* line 286, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 288, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse footer:before,
 .blockquote-reverse small:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right footer:before,
 blockquote.pull--right footer:before,
 blockquote.navigation-header__cart footer:before,
-blockquote.navigation-header__search-box footer:before,
 blockquote.pull-right small:before,
 blockquote.pull--right small:before,
 blockquote.navigation-header__cart small:before,
-blockquote.navigation-header__search-box small:before,
 blockquote.pull-right .small:before,
 blockquote.pull--right .small:before,
-blockquote.navigation-header__cart .small:before,
-blockquote.navigation-header__search-box .small:before {
+blockquote.navigation-header__cart .small:before {
   content: '';
 }
-/* line 287, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 289, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
 .blockquote-reverse .small:after,
 blockquote.pull-right footer:after,
 blockquote.pull--right footer:after,
 blockquote.navigation-header__cart footer:after,
-blockquote.navigation-header__search-box footer:after,
 blockquote.pull-right small:after,
 blockquote.pull--right small:after,
 blockquote.navigation-header__cart small:after,
-blockquote.navigation-header__search-box small:after,
 blockquote.pull-right .small:after,
 blockquote.pull--right .small:after,
-blockquote.navigation-header__cart .small:after,
-blockquote.navigation-header__search-box .small:after {
+blockquote.navigation-header__cart .small:after {
   content: '\00A0 \2014';
 }
 
-/* line 294, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 296, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 address {
   margin-bottom: 20px;
   font-style: normal;
@@ -2381,36 +2315,36 @@ pre code {
 }
 
 /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-.container, .header, .main, .footer-bottom__inner {
+.container, .header, .main, .footer-top__inner, .footer-bottom__inner {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:before, .header:before, .main:before, .footer-bottom__inner:before, .container:after, .header:after, .main:after, .footer-bottom__inner:after {
+.container:before, .header:before, .main:before, .footer-top__inner:before, .footer-bottom__inner:before, .container:after, .header:after, .main:after, .footer-top__inner:after, .footer-bottom__inner:after {
   content: " ";
   display: table;
 }
 /* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:after, .header:after, .main:after, .footer-bottom__inner:after {
+.container:after, .header:after, .main:after, .footer-top__inner:after, .footer-bottom__inner:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-  .container, .header, .main, .footer-bottom__inner {
+  .container, .header, .main, .footer-top__inner, .footer-bottom__inner {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-  .container, .header, .main, .footer-bottom__inner {
+  .container, .header, .main, .footer-top__inner, .footer-bottom__inner {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-  .container, .header, .main, .footer-bottom__inner {
+  .container, .header, .main, .footer-top__inner, .footer-bottom__inner {
     width: 1170px;
   }
 }
@@ -2448,7 +2382,7 @@ pre code {
 }
 
 /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .featured-list__post, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .form--footer, .col-md-4, .aside, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .about--footer, .post, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .latest-articles, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .featured-products, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .main-navigation, .featured-list__post, .post, .form--footer, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2456,7 +2390,7 @@ pre code {
 }
 
 /* line 27, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .featured-list__post {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .main-navigation, .featured-list__post, .post, .form--footer {
   float: left;
 }
 
@@ -2516,7 +2450,7 @@ pre code {
 }
 
 /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-12, .featured-list__post {
+.col-xs-12, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .main-navigation, .featured-list__post, .post, .form--footer {
   width: 100%;
 }
 
@@ -2717,7 +2651,7 @@ pre code {
 
 @media (min-width: 768px) {
   /* line 27, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-1, .col-sm-2, .col-sm-3, .featured-list__post, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .hero-carousel {
+  .col-sm-1, .col-sm-2, .col-sm-3, .featured-list__post, .col-sm-4, .form--footer, .col-sm-5, .col-sm-6, .about--footer, .post, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .featured-products, .col-sm-11, .col-sm-12, .hero-carousel {
     float: left;
   }
 
@@ -2737,7 +2671,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-4 {
+  .col-sm-4, .form--footer {
     width: 33.33333%;
   }
 
@@ -2747,7 +2681,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-6 {
+  .col-sm-6, .about--footer, .post {
     width: 50%;
   }
 
@@ -2767,7 +2701,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-10 {
+  .col-sm-10, .featured-products {
     width: 83.33333%;
   }
 
@@ -2917,7 +2851,7 @@ pre code {
   }
 
   /* line 60, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-offset-1 {
+  .col-sm-offset-1, .featured-products {
     margin-left: 8.33333%;
   }
 
@@ -2978,7 +2912,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .aside, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .latest-articles, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -2998,7 +2932,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4 {
+  .col-md-4, .aside {
     width: 33.33333%;
   }
 
@@ -3018,7 +2952,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-8 {
+  .col-md-8, .latest-articles {
     width: 66.66667%;
   }
 
@@ -4973,7 +4907,7 @@ tbody.collapse.in {
   background-clip: padding-box;
 }
 /* line 54, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu.pull-right, .dropdown-menu.pull--right, .dropdown-menu.navigation-header__cart, .dropdown-menu.navigation-header__search-box {
+.dropdown-menu.pull-right, .dropdown-menu.pull--right, .dropdown-menu.navigation-header__cart {
   right: 0;
   left: auto;
 }
@@ -5065,7 +4999,7 @@ tbody.collapse.in {
 }
 
 /* line 173, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
-.pull-right > .dropdown-menu, .pull--right > .dropdown-menu, .navigation-header__cart > .dropdown-menu, .navigation-header__search-box > .dropdown-menu {
+.pull-right > .dropdown-menu, .pull--right > .dropdown-menu, .navigation-header__cart > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -5830,10 +5764,11 @@ tbody.collapse.in {
 }
 
 /* line 108, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-.container > .navbar-header, .header > .navbar-header, .main > .navbar-header, .footer-bottom__inner > .navbar-header,
+.container > .navbar-header, .header > .navbar-header, .main > .navbar-header, .footer-top__inner > .navbar-header, .footer-bottom__inner > .navbar-header,
 .container > .navbar-collapse,
 .header > .navbar-collapse,
 .main > .navbar-collapse,
+.footer-top__inner > .navbar-collapse,
 .footer-bottom__inner > .navbar-collapse,
 .container-fluid > .navbar-header,
 .footer-top > .navbar-header,
@@ -5846,10 +5781,11 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 108, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .container > .navbar-header, .header > .navbar-header, .main > .navbar-header, .footer-bottom__inner > .navbar-header,
+  .container > .navbar-header, .header > .navbar-header, .main > .navbar-header, .footer-top__inner > .navbar-header, .footer-bottom__inner > .navbar-header,
   .container > .navbar-collapse,
   .header > .navbar-collapse,
   .main > .navbar-collapse,
+  .footer-top__inner > .navbar-collapse,
   .footer-bottom__inner > .navbar-collapse,
   .container-fluid > .navbar-header,
   .footer-top > .navbar-header,
@@ -5921,7 +5857,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 180, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, .navbar > .header .navbar-brand, .navbar > .main .navbar-brand, .navbar > .footer-bottom__inner .navbar-brand, .navbar > .container-fluid .navbar-brand, .navbar > .footer-top .navbar-brand, .navbar > .footer-bottom .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > .header .navbar-brand, .navbar > .main .navbar-brand, .navbar > .footer-top__inner .navbar-brand, .navbar > .footer-bottom__inner .navbar-brand, .navbar > .container-fluid .navbar-brand, .navbar > .footer-top .navbar-brand, .navbar > .footer-bottom .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -6732,13 +6668,13 @@ a.badge:hover, a.badge:focus {
   border-top-color: #d5d5d5;
 }
 /* line 28, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
-.container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
+.container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
-.jumbotron .container, .jumbotron .header, .jumbotron .main, .jumbotron .footer-bottom__inner {
+.jumbotron .container, .jumbotron .header, .jumbotron .main, .jumbotron .footer-top__inner, .jumbotron .footer-bottom__inner {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -6748,7 +6684,7 @@ a.badge:hover, a.badge:focus {
     padding-bottom: 48px;
   }
   /* line 43, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
+  .container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -7033,8 +6969,7 @@ a.thumbnail.active {
 .media-right,
 .media > .pull-right,
 .media > .pull--right,
-.media > .navigation-header__cart,
-.media > .navigation-header__search-box {
+.media > .navigation-header__cart {
   padding-left: 10px;
 }
 
@@ -8586,7 +8521,7 @@ button.close {
 }
 
 /* line 15, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss */
-.pull-right, .pull--right, .navigation-header__cart, .navigation-header__search-box {
+.pull-right, .pull--right, .navigation-header__cart {
   float: right !important;
 }
 
@@ -8643,12 +8578,12 @@ button.close {
 }
 
 /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-.visible-md, .visible--desktop, .navigation-header__soical, .navigation-header__search-box {
+.visible-md, .visible--desktop, .navigation-header__soical, .sub-nav--footer {
   display: none !important;
 }
 
 /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-.visible-lg, .visible--desktop, .navigation-header__soical, .navigation-header__search-box {
+.visible-lg, .visible--desktop, .navigation-header__soical, .sub-nav--footer {
   display: none !important;
 }
 
@@ -8762,26 +8697,26 @@ button.close {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 7, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .visible-md, .visible--desktop, .navigation-header__soical, .navigation-header__search-box {
+  .visible-md, .visible--desktop, .navigation-header__soical, .sub-nav--footer {
     display: block !important;
   }
 
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  table.visible-md, table.visible--desktop, table.navigation-header__soical, table.navigation-header__search-box {
+  table.visible-md, table.visible--desktop, table.navigation-header__soical, table.sub-nav--footer {
     display: table !important;
   }
 
   /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  tr.visible-md, tr.visible--desktop, tr.navigation-header__soical, tr.navigation-header__search-box {
+  tr.visible-md, tr.visible--desktop, tr.navigation-header__soical, tr.sub-nav--footer {
     display: table-row !important;
   }
 
   /* line 12, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  th.visible-md, th.visible--desktop, th.navigation-header__soical, th.navigation-header__search-box,
+  th.visible-md, th.visible--desktop, th.navigation-header__soical, th.sub-nav--footer,
   td.visible-md,
   td.visible--desktop,
   td.navigation-header__soical,
-  td.navigation-header__search-box {
+  td.sub-nav--footer {
     display: table-cell !important;
   }
 }
@@ -8808,26 +8743,26 @@ button.close {
 
 @media (min-width: 1200px) {
   /* line 7, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .visible-lg, .visible--desktop, .navigation-header__soical, .navigation-header__search-box {
+  .visible-lg, .visible--desktop, .navigation-header__soical, .sub-nav--footer {
     display: block !important;
   }
 
   /* line 10, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  table.visible-lg, table.visible--desktop, table.navigation-header__soical, table.navigation-header__search-box {
+  table.visible-lg, table.visible--desktop, table.navigation-header__soical, table.sub-nav--footer {
     display: table !important;
   }
 
   /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  tr.visible-lg, tr.visible--desktop, tr.navigation-header__soical, tr.navigation-header__search-box {
+  tr.visible-lg, tr.visible--desktop, tr.navigation-header__soical, tr.sub-nav--footer {
     display: table-row !important;
   }
 
   /* line 12, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  th.visible-lg, th.visible--desktop, th.navigation-header__soical, th.navigation-header__search-box,
+  th.visible-lg, th.visible--desktop, th.navigation-header__soical, th.sub-nav--footer,
   td.visible-lg,
   td.visible--desktop,
   td.navigation-header__soical,
-  td.navigation-header__search-box {
+  td.sub-nav--footer {
     display: table-cell !important;
   }
 }
@@ -8854,13 +8789,13 @@ button.close {
 
 @media (max-width: 767px) {
   /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-xs, .visible--desktop, .navigation-header__soical, .navigation-header__search-box, .hero-carousel, .carousel__item-title, .widget, .logo-alt, .footer-top {
+  .hidden-xs, .visible--desktop, .navigation-header__soical, .sub-nav--footer, .main-navigation__search-box, .hero-carousel, .footer-top, .carousel__item-title, .widget, .logo-alt {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-sm, .visible--desktop, .navigation-header__soical, .navigation-header__search-box {
+  .hidden-sm, .aside, .visible--desktop, .navigation-header__soical, .sub-nav--footer, .main-navigation__search-box {
     display: none !important;
   }
 }
@@ -9049,8 +8984,9 @@ a {
   transition: color, 0.4s, ease-in;
 }
 /* line 13, ../sass/_base.scss */
-a:hover {
+a:hover, a:focus {
   color: #C99E66;
+  text-decoration: none !important;
   -moz-transition: color, 0.6s, ease-in;
   -o-transition: color, 0.6s, ease-in;
   -webkit-transition: color, 0.6s, ease-in;
@@ -9125,37 +9061,44 @@ html {
 }
 
 /* line 44, ../sass/_typography.scss */
-.h4, .h4--reversed, .section-title, .section-title--centered {
+.h4, .h4--reversed, .section-title, .section-title--centered, .section-title--no-spacer {
   font-family: "Raleway", sans-serif;
   font-size: 0.875em;
   line-height: 1.28571em;
+  letter-spacing: 0.0625em;
 }
 
-/* line 48, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 .h4--reversed {
   color: #EEEEEF;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 54, ../sass/_typography.scss */
-.section-title, .section-title--centered {
+/* line 55, ../sass/_typography.scss */
+.section-title, .section-title--centered, .section-title--no-spacer {
   color: #C99E66;
   text-transform: uppercase;
   font-weight: 500;
-  margin: 0 0 1em 0;
+  margin-bottom: 1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 54, ../sass/_typography.scss */
-  .section-title, .section-title--centered {
+  /* line 55, ../sass/_typography.scss */
+  .section-title, .section-title--centered, .section-title--no-spacer {
     text-align: left;
   }
 }
-/* line 63, ../sass/_typography.scss */
+/* line 64, ../sass/_typography.scss */
 .section-title--centered {
   position: relative;
 }
-/* line 67, ../sass/_typography.scss */
+@media only screen and (min-width: 62em) {
+  /* line 64, ../sass/_typography.scss */
+  .section-title--centered {
+    text-align: center;
+  }
+}
+/* line 71, ../sass/_typography.scss */
 .section-title--centered:after {
   content: " ";
   background-color: #C99E66;
@@ -9167,70 +9110,84 @@ html {
   bottom: -0.625em;
   margin: 0 auto;
 }
+/* line 82, ../sass/_typography.scss */
+.section-title--no-spacer {
+  margin-bottom: 0;
+}
 
 /*** 1.2 body text styles ***/
-/* line 80, ../sass/_typography.scss */
+/* line 88, ../sass/_typography.scss */
 .paragraph, .paragraph--footer, .post__excerpt {
   color: #555555;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 
-/* line 85, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 .paragraph--footer {
-  color: #000000;
+  color: #878787;
 }
 
-/* line 89, ../sass/_typography.scss */
+/* line 97, ../sass/_typography.scss */
 .meta {
   color: #9E9E9E;
   font-size: 0.75em;
   line-height: 1.5em;
 }
 
-/* line 93, ../sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 .ss-icon {
   padding: 0 0.25em;
 }
-/* line 95, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 .ss-icon:hover {
   color: #C99E66;
 }
 
 /*** header layout ***/
-/* line 11, ../sass/_layout.scss */
-.featured-products {
-  margin: 0 0 1em 0;
-}
 @media only screen and (min-width: 48em) {
   /* line 11, ../sass/_layout.scss */
   .featured-products {
-    margin: 2.8125em 0 0 0;
+    margin-top: 2.8125em;
   }
 }
 
+/* line 17, ../sass/_layout.scss */
+.latest-articles {
+  margin-top: 1em;
+}
 @media only screen and (min-width: 48em) {
   /* line 17, ../sass/_layout.scss */
   .latest-articles {
-    margin: 2.8125em 0 0 0;
+    margin-top: 1.875em;
   }
 }
 
-/* line 22, ../sass/_layout.scss */
+/* line 24, ../sass/_layout.scss */
 .aside {
   margin-top: 1.875em;
 }
 
-/* line 25, ../sass/_layout.scss */
+/* line 28, ../sass/_layout.scss */
 .mobile-social {
   font-size: 1.5em;
   line-height: 1.25em;
   margin-top: 1.875em;
 }
 
+/* line 33, ../sass/_layout.scss */
+.instagram-feed {
+  margin-bottom: 2.8125em;
+}
+
 /*** helper classes ***/
+/* line 58, ../sass/_layout.scss */
+.color__accent {
+  color: #C99E66;
+}
+
 /*** javascript hook for putting img into it's parent's background ***/
-/* line 47, ../sass/_layout.scss */
+/* line 62, ../sass/_layout.scss */
 .bg__img {
   background-position: center center;
   background-size: cover;
@@ -9238,9 +9195,15 @@ html {
 }
 
 /*** layout elements ***/
-/* line 55, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 .center__btn {
   margin-top: 1.875em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 70, ../sass/_layout.scss */
+  .center__btn {
+    margin-top: 2.8125em;
+  }
 }
 
 /*** =====================================================
@@ -9254,15 +9217,16 @@ last update: 31/03/2016
 ===================================================== ***/
 /* line 1, ../sass/modules/_navigation-header.scss */
 .navigation-header {
-  margin: 1.25em 0 1.875em 0;
+  margin-top: 1em;
 }
 @media only screen and (min-width: 62em) {
   /* line 1, ../sass/modules/_navigation-header.scss */
   .navigation-header {
+    padding: 1em 0;
     border-bottom: 1px solid #D4D4D4;
   }
 }
-/* line 6, ../sass/modules/_navigation-header.scss */
+/* line 7, ../sass/modules/_navigation-header.scss */
 .navigation-header__toggle {
   padding: 0.375em 0.1875em;
   border: none;
@@ -9272,12 +9236,12 @@ last update: 31/03/2016
   margin: 0;
 }
 @media only screen and (min-width: 48em) {
-  /* line 6, ../sass/modules/_navigation-header.scss */
+  /* line 7, ../sass/modules/_navigation-header.scss */
   .navigation-header__toggle {
     display: block;
   }
 }
-/* line 15, ../sass/modules/_navigation-header.scss */
+/* line 16, ../sass/modules/_navigation-header.scss */
 .navigation-header__toggle .icon-bar {
   width: 26px;
   height: 2px;
@@ -9286,11 +9250,22 @@ last update: 31/03/2016
   -webkit-border-radius: 0 0;
   border-radius: 0 / 0;
 }
-/* line 26, ../sass/modules/_navigation-header.scss */
-.navigation-header__masthead {
-  margin: 0 0 2em 0;
+/* line 23, ../sass/modules/_navigation-header.scss */
+.navigation-header__soical {
+  display: inline-block;
+  color: #9E9E9E;
 }
-/* line 30, ../sass/modules/_navigation-header.scss */
+/* line 28, ../sass/modules/_navigation-header.scss */
+.navigation-header__masthead {
+  margin-top: 1.875em;
+}
+@media only screen and (min-width: 62em) {
+  /* line 28, ../sass/modules/_navigation-header.scss */
+  .navigation-header__masthead {
+    margin-top: 2.8125em;
+  }
+}
+/* line 35, ../sass/modules/_navigation-header.scss */
 .navigation-header__cart {
   color: #9E9E9E;
   font-family: "Raleway", sans-serif;
@@ -9298,16 +9273,13 @@ last update: 31/03/2016
   line-height: 1.28571em;
   text-transform: uppercase;
 }
-/* line 37, ../sass/modules/_navigation-header.scss */
-.navigation-header__search-box {
-  display: inline-block;
-}
 
 /* line 1, ../sass/modules/_main-navigation.scss */
 .main-navigation {
   overflow: hidden;
   max-height: 0;
   border-bottom: 1px solid #D4D4D4;
+  margin-top: 1.875em;
   -moz-transition: max-height, 0.4s, ease-in-out;
   -o-transition: max-height, 0.4s, ease-in-out;
   -webkit-transition: max-height, 0.4s, ease-in-out;
@@ -9316,14 +9288,16 @@ last update: 31/03/2016
 @media only screen and (min-width: 62em) {
   /* line 1, ../sass/modules/_main-navigation.scss */
   .main-navigation {
+    max-height: 5em;
     border-top: 1px solid #D4D4D4;
+    margin-top: 2.8125em;
   }
 }
-/* line 10, ../sass/modules/_main-navigation.scss */
+/* line 13, ../sass/modules/_main-navigation.scss */
 .main-navigation__item {
   display: inline;
 }
-/* line 13, ../sass/modules/_main-navigation.scss */
+/* line 16, ../sass/modules/_main-navigation.scss */
 .main-navigation__link, .main-navigation__link--alpha, .main-navigation__link--omega {
   display: inline-block;
   color: #292929;
@@ -9337,19 +9311,30 @@ last update: 31/03/2016
   padding: 0.5625em 0;
 }
 @media only screen and (min-width: 62em) {
-  /* line 13, ../sass/modules/_main-navigation.scss */
+  /* line 16, ../sass/modules/_main-navigation.scss */
   .main-navigation__link, .main-navigation__link--alpha, .main-navigation__link--omega {
     width: auto;
     padding: 1.375em 1.5625em;
   }
 }
-/* line 28, ../sass/modules/_main-navigation.scss */
+/* line 31, ../sass/modules/_main-navigation.scss */
 .main-navigation__link--alpha {
   padding-top: 0;
 }
-/* line 32, ../sass/modules/_main-navigation.scss */
+/* line 35, ../sass/modules/_main-navigation.scss */
 .main-navigation__link--omega {
   margin-bottom: 0.375em;
+}
+@media only screen and (min-width: 62em) {
+  /* line 35, ../sass/modules/_main-navigation.scss */
+  .main-navigation__link--omega {
+    margin-bottom: 0;
+  }
+}
+/* line 45, ../sass/modules/_main-navigation.scss */
+.main-navigation__search-box {
+  display: inline-block;
+  margin-left: 1em;
 }
 
 /* line 1, ../sass/modules/_hero-carousel.scss */
@@ -9395,18 +9380,13 @@ last update: 31/03/2016
 /* line 31, ../sass/modules/_hero-carousel.scss */
 .hero-carousel-slide__meta {
   display: block;
-  color: #E4E4E4;
+  color: #C99E66;
   font-size: 0.75em;
   line-height: 1.5em;
   border-top-width: 0.0625em;
   border-top-style: solid;
   border-top-color: #D4D4D4;
   padding-top: 0.3125em;
-}
-
-/* line 1, ../sass/modules/_feature-posts.scss */
-.feature-posts {
-  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 48em) {
@@ -9416,25 +9396,101 @@ last update: 31/03/2016
   }
 }
 
+/* line 1, ../sass/modules/_feature-posts.scss */
+.feature-posts {
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/modules/_footer.scss */
+.footer {
+  margin-top: 1.875em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 1, ../sass/modules/_footer.scss */
+  .footer {
+    margin-top: 2.8125em;
+  }
+}
+/* line 6, ../sass/modules/_footer.scss */
+.footer__social {
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  text-transform: uppercase;
+  color: #E4E4E4;
+  padding: 1.875em 0;
+}
+
+/* line 14, ../sass/modules/_footer.scss */
+.footer-top {
+  background-color: #292929;
+}
+@media only screen and (min-width: 48em) {
+  /* line 14, ../sass/modules/_footer.scss */
+  .footer-top {
+    padding-bottom: 2.8125em;
+  }
+}
+
+/* line 24, ../sass/modules/_footer.scss */
+.footer-bottom {
+  background-color: #181818;
+}
+/* line 27, ../sass/modules/_footer.scss */
+.footer-bottom__inner {
+  padding: 1.5em 0;
+}
+@media only screen and (min-width: 48em) {
+  /* line 27, ../sass/modules/_footer.scss */
+  .footer-bottom__inner {
+    padding: 1.875em 0;
+  }
+}
+
+/* line 35, ../sass/modules/_footer.scss */
+.logo-alt {
+  float: left;
+}
+
+/* line 38, ../sass/modules/_footer.scss */
+.footer-copy {
+  color: #E4E4E4;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 38, ../sass/modules/_footer.scss */
+  .footer-copy {
+    float: left;
+    margin-left: 1em;
+  }
+}
+
 /* line 1, ../sass/modules/_post.scss */
 .post {
   margin-top: 1em;
 }
-/* line 3, ../sass/modules/_post.scss */
+/* line 4, ../sass/modules/_post.scss */
 .post__img--featured {
   height: 11.25em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 3, ../sass/modules/_post.scss */
+  /* line 4, ../sass/modules/_post.scss */
   .post__img--featured {
     height: 5em;
   }
 }
-/* line 9, ../sass/modules/_post.scss */
+/* line 10, ../sass/modules/_post.scss */
 .post__img {
   height: 9.0625em;
 }
-/* line 12, ../sass/modules/_post.scss */
+@media only screen and (min-width: 48em) {
+  /* line 10, ../sass/modules/_post.scss */
+  .post__img {
+    height: 11.25em;
+  }
+}
+/* line 16, ../sass/modules/_post.scss */
 .post__label {
   display: inline-block;
   background-color: #C99E66;
@@ -9443,20 +9499,20 @@ last update: 31/03/2016
   top: 1em;
   left: 0.5em;
 }
-/* line 21, ../sass/modules/_post.scss */
+/* line 25, ../sass/modules/_post.scss */
 .post__cat-link:hover {
   color: #292929;
 }
-/* line 25, ../sass/modules/_post.scss */
+/* line 29, ../sass/modules/_post.scss */
 .post__title {
   margin-top: 0.75em;
 }
-/* line 28, ../sass/modules/_post.scss */
+/* line 32, ../sass/modules/_post.scss */
 .post__excerpt {
   margin-top: 0.375em;
   margin-bottom: 0.75em;
 }
-/* line 33, ../sass/modules/_post.scss */
+/* line 37, ../sass/modules/_post.scss */
 .post__meta {
   color: #9E9E9E;
   font-size: 0.75em;
@@ -9470,8 +9526,8 @@ last update: 31/03/2016
 /* line 1, ../sass/modules/_card.scss */
 .card {
   box-sizing: border-box;
-  background-color: #ffffff;
   width: 90%;
+  background-color: #ffffff;
   position: relative;
   top: -2.25em;
   padding: 0.75em 1.25em;
@@ -9482,9 +9538,9 @@ last update: 31/03/2016
 @media only screen and (min-width: 48em) {
   /* line 1, ../sass/modules/_card.scss */
   .card {
+    text-align: left;
     width: 100%;
     top: 0;
-    text-align: left;
     padding: 0;
     margin: 0;
     border: none;
@@ -9509,6 +9565,10 @@ last update: 31/03/2016
     height: 7.5em;
   }
 }
+/* line 10, ../sass/modules/_carousel.scss */
+.carousel__item-title {
+  color: #555555;
+}
 
 /* line 3, ../sass/modules/_widget.scss */
 .widget--newsletter {
@@ -9522,6 +9582,17 @@ last update: 31/03/2016
 /* line 10, ../sass/modules/_widget.scss */
 .widget__description--centered {
   margin-top: 1.5em;
+}
+
+/* line 2, ../sass/modules/_gallery.scss */
+.gallery__item, .gallery__item--instagram {
+  float: left;
+}
+/* line 5, ../sass/modules/_gallery.scss */
+.gallery__item--instagram {
+  width: 7.6875em;
+  height: 7.6875em;
+  margin-right: 0;
 }
 
 /*** bottons ***/
@@ -9617,34 +9688,21 @@ input[type="email"]::-webkit-input-placeholder {
 }
 
 /*** search box ***/
+/* line 65, ../sass/modules/_elements.scss */
+.search-box__input-text {
+  padding: 0.25em 0.5em;
+}
+/* line 68, ../sass/modules/_elements.scss */
+.search-box__input-btn {
+  background-color: #C99E66;
+  position: relative;
+  left: -1.25em;
+  padding: 0.25em 0.25em;
+  border: none;
+}
+
 /*** alternative logo ***/
-/* line 1, ../sass/modules/_footer.scss */
-.footer {
-  margin-top: 1.875em;
-}
-
-/* line 4, ../sass/modules/_footer.scss */
-.footer-top {
-  background-color: #292929;
-}
-
-/* line 11, ../sass/modules/_footer.scss */
-.footer-bottom {
-  background-color: #181818;
-}
-/* line 14, ../sass/modules/_footer.scss */
-.footer-bottom__inner {
-  padding: 1.5em 0;
-}
-
-/* line 19, ../sass/modules/_footer.scss */
-.footer-copy {
-  color: #E4E4E4;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  line-height: 1.5em;
-}
-
+/*** sub nav style ***/
 /* line 1, ../sass/_states.scss */
 .is__open {
   max-height: 13.75em;
