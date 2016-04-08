@@ -2350,19 +2350,19 @@ pre code {
 }
 
 /* line 30, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-.container-fluid, .footer-top, .footer-bottom {
+.container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container-fluid:before, .footer-top:before, .footer-bottom:before, .container-fluid:after, .footer-top:after, .footer-bottom:after {
+.container-fluid:before, .container-fluid:after {
   content: " ";
   display: table;
 }
 /* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container-fluid:after, .footer-top:after, .footer-bottom:after {
+.container-fluid:after {
   clear: both;
 }
 
@@ -2382,7 +2382,7 @@ pre code {
 }
 
 /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .aside, .col-lg-3, .col-xs-4, .col-sm-4, .form--footer, .col-md-4, .about--footer, .author__avatar, .sub-nav--footer, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .about--footer, .post, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .author__profile, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .latest-articles, .col-lg-9, .col-xs-10, .col-sm-10, .featured-products, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .main-navigation, .post, .form--footer, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .aside, .col-lg-3, .col-xs-4, .col-sm-4, .form--footer, .col-md-4, .about--footer, .author__avatar, .sub-nav--footer, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .about--footer, .post, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .author__profile, .col-lg-8, .featured-products, .col-xs-9, .col-sm-9, .col-md-9, .latest-articles, .col-lg-9, .col-xs-10, .col-sm-10, .featured-products, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .main-navigation, .post, .form--footer, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -3173,7 +3173,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   /* line 27, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .featured-products, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -3213,7 +3213,7 @@ pre code {
   }
 
   /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-8 {
+  .col-lg-8, .featured-products {
     width: 66.66667%;
   }
 
@@ -3378,7 +3378,7 @@ pre code {
   }
 
   /* line 60, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-offset-2 {
+  .col-lg-offset-2, .featured-products {
     margin-left: 16.66667%;
   }
 
@@ -5771,11 +5771,7 @@ tbody.collapse.in {
 .footer-top__inner > .navbar-collapse,
 .footer-bottom__inner > .navbar-collapse,
 .container-fluid > .navbar-header,
-.footer-top > .navbar-header,
-.footer-bottom > .navbar-header,
-.container-fluid > .navbar-collapse,
-.footer-top > .navbar-collapse,
-.footer-bottom > .navbar-collapse {
+.container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -5788,11 +5784,7 @@ tbody.collapse.in {
   .footer-top__inner > .navbar-collapse,
   .footer-bottom__inner > .navbar-collapse,
   .container-fluid > .navbar-header,
-  .footer-top > .navbar-header,
-  .footer-bottom > .navbar-header,
-  .container-fluid > .navbar-collapse,
-  .footer-top > .navbar-collapse,
-  .footer-bottom > .navbar-collapse {
+  .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5857,7 +5849,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 180, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, .navbar > .header .navbar-brand, .navbar > .main .navbar-brand, .navbar > .footer-top__inner .navbar-brand, .navbar > .footer-bottom__inner .navbar-brand, .navbar > .container-fluid .navbar-brand, .navbar > .footer-top .navbar-brand, .navbar > .footer-bottom .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > .header .navbar-brand, .navbar > .main .navbar-brand, .navbar > .footer-top__inner .navbar-brand, .navbar > .footer-bottom__inner .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -6668,7 +6660,7 @@ a.badge:hover, a.badge:focus {
   border-top-color: #d5d5d5;
 }
 /* line 28, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
-.container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
+.container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6684,7 +6676,7 @@ a.badge:hover, a.badge:focus {
     padding-bottom: 48px;
   }
   /* line 43, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron, .footer-top .jumbotron, .footer-bottom .jumbotron {
+  .container .jumbotron, .header .jumbotron, .main .jumbotron, .footer-top__inner .jumbotron, .footer-bottom__inner .jumbotron, .container-fluid .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -9034,32 +9026,32 @@ html {
   }
 }
 
-/* line 31, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 .h3, .h3--featured, .h3--author-name {
   font-size: 1.375em;
   line-height: 1.36364em;
 }
 @media only screen and (min-width: 62em) {
-  /* line 31, ../sass/_typography.scss */
+  /* line 28, ../sass/_typography.scss */
   .h3, .h3--featured, .h3--author-name {
     font-size: 1.5em;
     line-height: 1.25em;
     line-height: 1.125em;
   }
 }
-/* line 37, ../sass/_typography.scss */
+/* line 34, ../sass/_typography.scss */
 .h3--accent {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   color: #C99E66;
   text-transform: uppercase;
 }
-/* line 43, ../sass/_typography.scss */
+/* line 40, ../sass/_typography.scss */
 .h3--featured {
   margin: 0 0 1em 0;
 }
 @media only screen and (min-width: 48em) {
-  /* line 43, ../sass/_typography.scss */
+  /* line 40, ../sass/_typography.scss */
   .h3--featured {
     font-size: 0.875em;
     line-height: 1.28571em;
@@ -9068,40 +9060,40 @@ html {
   }
 }
 @media only screen and (min-width: 62em) {
-  /* line 43, ../sass/_typography.scss */
+  /* line 40, ../sass/_typography.scss */
   .h3--featured {
     font-size: 1em;
     line-height: 1.5em;
     line-height: 1.125em;
   }
 }
-/* line 56, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .h3--author-name {
   font-size: 1.125em;
   line-height: 1.33333em;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 .h4, .h4--reversed, .h4--author-title, .section-title, .section-title--centered, .section-title--no-spacer {
   font-family: "Raleway", sans-serif;
   font-size: 0.875em;
   line-height: 1.28571em;
   letter-spacing: 0.0625em;
 }
-/* line 65, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 .h4--reversed {
   color: #EEEEEF;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 71, ../sass/_typography.scss */
+/* line 68, ../sass/_typography.scss */
 .h4--author-title {
   font-family: "Noto Sans", sans-serif;
   color: #555555;
   letter-spacing: 0;
 }
 
-/* line 78, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 .section-title, .section-title--centered, .section-title--no-spacer {
   color: #C99E66;
   text-transform: uppercase;
@@ -9109,22 +9101,22 @@ html {
   margin-bottom: 1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 78, ../sass/_typography.scss */
+  /* line 75, ../sass/_typography.scss */
   .section-title, .section-title--centered, .section-title--no-spacer {
     text-align: left;
   }
 }
-/* line 87, ../sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 .section-title--centered {
   position: relative;
 }
 @media only screen and (min-width: 62em) {
-  /* line 87, ../sass/_typography.scss */
+  /* line 84, ../sass/_typography.scss */
   .section-title--centered {
     text-align: center;
   }
 }
-/* line 94, ../sass/_typography.scss */
+/* line 91, ../sass/_typography.scss */
 .section-title--centered:after {
   content: " ";
   background-color: #C99E66;
@@ -9136,20 +9128,20 @@ html {
   bottom: -0.625em;
   margin: 0 auto;
 }
-/* line 105, ../sass/_typography.scss */
+/* line 102, ../sass/_typography.scss */
 .section-title--no-spacer {
   margin-bottom: 0;
 }
 
 /*** 1.2 body text styles ***/
-/* line 111, ../sass/_typography.scss */
+/* line 108, ../sass/_typography.scss */
 .paragraph, .paragraph--footer, .post__excerpt {
   color: #555555;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 }
 @media only screen and (min-width: 62em) {
-  /* line 111, ../sass/_typography.scss */
+  /* line 108, ../sass/_typography.scss */
   .paragraph, .paragraph--footer, .post__excerpt {
     font-size: 0.875em;
     line-height: 1.28571em;
@@ -9157,23 +9149,23 @@ html {
   }
 }
 
-/* line 120, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .paragraph--footer {
   color: #878787;
 }
 
-/* line 124, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 .meta {
   color: #9E9E9E;
   font-size: 0.75em;
   line-height: 1.5em;
 }
 
-/* line 128, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .ss-icon {
   padding: 0 0.25em;
 }
-/* line 130, ../sass/_typography.scss */
+/* line 127, ../sass/_typography.scss */
 .ss-icon:hover {
   color: #C99E66;
 }
@@ -9272,7 +9264,14 @@ last update: 31/03/2016
     border-bottom: 1px solid #D4D4D4;
   }
 }
-/* line 7, ../sass/modules/_navigation-header.scss */
+@media only screen and (min-width: 75em) {
+  /* line 1, ../sass/modules/_navigation-header.scss */
+  .navigation-header {
+    padding: 1.875em 0;
+    margin-top: 0;
+  }
+}
+/* line 11, ../sass/modules/_navigation-header.scss */
 .navigation-header__toggle {
   padding: 0.375em 0.1875em;
   border: none;
@@ -9282,12 +9281,12 @@ last update: 31/03/2016
   margin: 0;
 }
 @media only screen and (min-width: 48em) {
-  /* line 7, ../sass/modules/_navigation-header.scss */
+  /* line 11, ../sass/modules/_navigation-header.scss */
   .navigation-header__toggle {
     display: block;
   }
 }
-/* line 16, ../sass/modules/_navigation-header.scss */
+/* line 20, ../sass/modules/_navigation-header.scss */
 .navigation-header__toggle .icon-bar {
   width: 26px;
   height: 2px;
@@ -9296,22 +9295,28 @@ last update: 31/03/2016
   -webkit-border-radius: 0 0;
   border-radius: 0 / 0;
 }
-/* line 23, ../sass/modules/_navigation-header.scss */
+/* line 27, ../sass/modules/_navigation-header.scss */
 .navigation-header__soical {
   display: inline-block;
   color: #9E9E9E;
 }
-/* line 28, ../sass/modules/_navigation-header.scss */
+/* line 32, ../sass/modules/_navigation-header.scss */
 .navigation-header__masthead {
   margin-top: 1.875em;
 }
 @media only screen and (min-width: 62em) {
-  /* line 28, ../sass/modules/_navigation-header.scss */
+  /* line 32, ../sass/modules/_navigation-header.scss */
   .navigation-header__masthead {
     margin-top: 2.8125em;
   }
 }
-/* line 35, ../sass/modules/_navigation-header.scss */
+@media only screen and (min-width: 75em) {
+  /* line 32, ../sass/modules/_navigation-header.scss */
+  .navigation-header__masthead {
+    margin-top: 1.875em;
+  }
+}
+/* line 42, ../sass/modules/_navigation-header.scss */
 .navigation-header__cart {
   color: #9E9E9E;
   font-family: "Raleway", sans-serif;
@@ -9339,11 +9344,17 @@ last update: 31/03/2016
     margin-top: 2.8125em;
   }
 }
-/* line 13, ../sass/modules/_main-navigation.scss */
+@media only screen and (min-width: 75em) {
+  /* line 1, ../sass/modules/_main-navigation.scss */
+  .main-navigation {
+    margin-top: 1.875em;
+  }
+}
+/* line 16, ../sass/modules/_main-navigation.scss */
 .main-navigation__item {
   display: inline;
 }
-/* line 16, ../sass/modules/_main-navigation.scss */
+/* line 19, ../sass/modules/_main-navigation.scss */
 .main-navigation__link, .main-navigation__link--alpha, .main-navigation__link--omega {
   display: inline-block;
   color: #292929;
@@ -9357,27 +9368,27 @@ last update: 31/03/2016
   padding: 0.5625em 0;
 }
 @media only screen and (min-width: 62em) {
-  /* line 16, ../sass/modules/_main-navigation.scss */
+  /* line 19, ../sass/modules/_main-navigation.scss */
   .main-navigation__link, .main-navigation__link--alpha, .main-navigation__link--omega {
     width: auto;
     padding: 1.875em 1.5625em;
   }
 }
-/* line 31, ../sass/modules/_main-navigation.scss */
+/* line 34, ../sass/modules/_main-navigation.scss */
 .main-navigation__link--alpha {
   padding-top: 0;
 }
-/* line 35, ../sass/modules/_main-navigation.scss */
+/* line 38, ../sass/modules/_main-navigation.scss */
 .main-navigation__link--omega {
   margin-bottom: 0.375em;
 }
 @media only screen and (min-width: 62em) {
-  /* line 35, ../sass/modules/_main-navigation.scss */
+  /* line 38, ../sass/modules/_main-navigation.scss */
   .main-navigation__link--omega {
     margin-bottom: 0;
   }
 }
-/* line 45, ../sass/modules/_main-navigation.scss */
+/* line 48, ../sass/modules/_main-navigation.scss */
 .main-navigation__search-box {
   display: inline-block;
   margin-left: 1em;
@@ -9407,7 +9418,13 @@ last update: 31/03/2016
     height: 26.25em;
   }
 }
-/* line 19, ../sass/modules/_hero-carousel.scss */
+@media only screen and (min-width: 75em) {
+  /* line 13, ../sass/modules/_hero-carousel.scss */
+  .hero-carousel-slide__img {
+    height: 32.5em;
+  }
+}
+/* line 22, ../sass/modules/_hero-carousel.scss */
 .hero-carousel-slide__overlay {
   width: 100%;
   height: 100%;
@@ -9421,7 +9438,7 @@ last update: 31/03/2016
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5));
   background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5));
 }
-/* line 27, ../sass/modules/_hero-carousel.scss */
+/* line 30, ../sass/modules/_hero-carousel.scss */
 .hero-carousel-slide__container {
   width: 86%;
   position: absolute;
@@ -9429,12 +9446,12 @@ last update: 31/03/2016
   bottom: 10%;
 }
 @media only screen and (min-width: 62em) {
-  /* line 27, ../sass/modules/_hero-carousel.scss */
+  /* line 30, ../sass/modules/_hero-carousel.scss */
   .hero-carousel-slide__container {
     width: 70%;
   }
 }
-/* line 36, ../sass/modules/_hero-carousel.scss */
+/* line 39, ../sass/modules/_hero-carousel.scss */
 .hero-carousel-slide__meta {
   display: block;
   color: #C99E66;
@@ -9480,23 +9497,23 @@ last update: 31/03/2016
 .footer-bottom {
   background-color: #181818;
 }
-/* line 27, ../sass/modules/_footer.scss */
+/* line 26, ../sass/modules/_footer.scss */
 .footer-bottom__inner {
   padding: 1.5em 0;
 }
 @media only screen and (min-width: 48em) {
-  /* line 27, ../sass/modules/_footer.scss */
+  /* line 26, ../sass/modules/_footer.scss */
   .footer-bottom__inner {
     padding: 1.875em 0;
   }
 }
 
-/* line 35, ../sass/modules/_footer.scss */
+/* line 34, ../sass/modules/_footer.scss */
 .logo-alt {
   float: left;
 }
 
-/* line 38, ../sass/modules/_footer.scss */
+/* line 37, ../sass/modules/_footer.scss */
 .footer-copy {
   color: #E4E4E4;
   text-transform: uppercase;
@@ -9504,7 +9521,7 @@ last update: 31/03/2016
   line-height: 1.5em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 38, ../sass/modules/_footer.scss */
+  /* line 37, ../sass/modules/_footer.scss */
   .footer-copy {
     float: left;
     margin-left: 1em;
@@ -9682,21 +9699,34 @@ last update: 31/03/2016
   margin-top: 0.5em;
   margin-right: 5%;
 }
-/* line 12, ../sass/modules/_gallery.scss */
+@media only screen and (min-width: 75em) {
+  /* line 5, ../sass/modules/_gallery.scss */
+  .gallery__item--product {
+    height: 5em;
+  }
+}
+/* line 15, ../sass/modules/_gallery.scss */
 .gallery__item--instagram {
   width: 7.6875em;
   height: 7.6875em;
   margin-right: 0;
 }
 @media only screen and (min-width: 62em) {
-  /* line 12, ../sass/modules/_gallery.scss */
+  /* line 15, ../sass/modules/_gallery.scss */
   .gallery__item--instagram {
     width: 10.35417em;
     height: 10.35417em;
   }
 }
+@media only screen and (min-width: 75em) {
+  /* line 15, ../sass/modules/_gallery.scss */
+  .gallery__item--instagram {
+    width: 11.875em;
+    height: 11.875em;
+  }
+}
 
-/* line 23, ../sass/modules/_gallery.scss */
+/* line 30, ../sass/modules/_gallery.scss */
 .gallery__omega {
   margin-right: 0;
 }

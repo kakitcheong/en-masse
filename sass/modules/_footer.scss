@@ -12,7 +12,7 @@
 	}
 }
 .footer-top{
-	@extend .container-fluid, .hidden-xs;
+	@extend .hidden-xs;
 	background-color: $color__background--footer-top;
 	@include respond-to(sm-screen){
 		padding-bottom: $el__spacer--md;
@@ -22,7 +22,6 @@
 	}
 }
 .footer-bottom{
-	@extend .container-fluid;
 	background-color: $color__background--footer-bottom;
 	&__inner{
 		@extend .container;

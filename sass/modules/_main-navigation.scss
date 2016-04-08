@@ -10,6 +10,9 @@
 		border-top: $el__border;
 		margin-top: $el__spacer--md;
 	}
+	@include respond-to(lg-screen){
+		margin-top: $el__spacer--sm;
+	}
 	&__item{
 		display: inline;
 	}

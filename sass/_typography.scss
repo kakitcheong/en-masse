@@ -24,9 +24,6 @@ html{
 		@include adjust-font-size-to(38px);
 		@include trailer();
 	}
-	@include respond-to(lg-screen){
-		//@include adjust-font-size-to(96px); /** temp. **/
-	}
 }
 .h3{
 	@include adjust-font-size-to(22px);
