@@ -1,0 +1,21 @@
+.author{
+	margin-top: $el__spacer--xs;
+	&--alpha{
+		@extend .author;
+			margin-top: 0;
+	}
+	&__avatar{
+		@extend .col-md-4;
+		box-sizing: border-box;
+		img{
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+	&__profile{
+		@extend .col-md-8;
+	}
+	&__social{
+		margin-top: $el__spacer--xs/2;
+	}
+}

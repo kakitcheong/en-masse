@@ -52,12 +52,13 @@
                             <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">twitter</a></li>
                         </ul> <!-- /.h-list -->  
                     </div> <!-- /.navigation-header__soical -->
+                    <div class="clearfix"></div>
                 </div> <!-- /.navigation-header -->
                 <div class="navigation-header__masthead">
                     <a href="#"> <!-- link to home -->
                         <picture>
                             <source srcset="images/global/mastheads/masthead-xs.svg" media="(max-width:767px)"> <!-- x-small logo -->
-                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:768px)"> <!-- small logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:768px) and (max-width:)"> <!-- small logo -->
                             <source srcset="images/global/mastheads/masthead-md.svg" media="(min-width:992px)"> <!-- medium logo -->
                             <img src="images/global/mastheads/masthead-xs.svg" alt="">  
                         </picture>
@@ -307,12 +308,12 @@
                     </div> <!-- /.row -->
                 </section> <!-- /.latest-articles -->
                 <aside class="aside">
-                    <div class="widget">
+                    <div class="widget--alpha">
                         <div class="section-title">
                             search articles
                         </div> <!-- /.section__title -->
                         <form class="search-box--aside">
-                            <input type="text" placeholder="search" class="search-box__input-text">
+                            <input type="text" placeholder="search" class="search-box__input-text--aside">
                             <button type="submit" class="search-box__input-btn"><iron-icon src="images/global/icons/search-18px.svg"></iron-icon></button>
                         </form> <!-- /.search -->
                     </div> <!-- /.widget -->
@@ -322,58 +323,70 @@
                         </div> <!-- /.section__title -->
                         <div class="widget__author">
                             <div class="author">
-                                <div class="author__avatar">
-                                    <img src="images/authors/xenia-wong.jpg" alt="Xenia Wong">
-                                </div> <!-- /.author__avatar -->
-                                <div class="author__name">
-                                    <h3 class="h3"><a href="#">Xenia Wong</a></h3>
-                                </div> <!-- /.author__name -->
-                                <div class="author__title">
-                                    <h4 class="h4">Marketing Director</h4>
-                                </div> <!-- /.author__title -->
-                                <div class="author__social">
-                                    <ul class="h-list">
-                                        <li class="h-list__item"><a href="#">facebook</a></li>
-                                        <li class="h-list__item"><a href="#">instagram</a></li>
-                                        <li class="h-list__item"><a href="#">twitter</a></li>
-                                    </ul> <!-- /.h-list -->
-                                </div> <!-- /.author__social -->
+                                <div class="row">
+                                    <div class="author__avatar">
+                                        <img src="images/authors/xenia-wong.jpg" alt="Xenia Wong">
+                                    </div> <!-- /.author__avatar -->
+                                    <div class="author__profile">
+                                        <div class="author__name">
+                                            <h3 class="h3--author-name"><a href="#">Xenia Wong</a></h3>
+                                        </div> <!-- /.author__name -->
+                                        <div class="author__title">
+                                            <h4 class="h4--author-title">Marketing Director</h4>
+                                        </div> <!-- /.author__title -->
+                                        <div class="author__social">
+                                            <ul class="h-list">
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">facebook</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">instagram</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">twitter</a></li>
+                                            </ul> <!-- /.h-list -->
+                                        </div> <!-- /.author__social -->
+                                    </div> <!-- /.author__profile -->
+                                </div> <!-- /.row -->
                             </div> <!-- /.author -->
                             <div class="author">
-                                <div class="author__avatar">
-                                    <img src="images/authors/phoebe-lai.jpg" alt="Phoebe Lai">
-                                </div> <!-- /.author__avatar -->
-                                <div class="author__name">
-                                    <h3 class="h3"><a href="#">Phoebe Lai</a></h3>
-                                </div> <!-- /.author__name -->
-                                <div class="author__title">
-                                    <h4 class="h4">Chief Editor</h4>
-                                </div> <!-- /.author__title -->
-                                <div class="author__social">
-                                    <ul class="h-list">
-                                        <li class="h-list__item"><a href="#">facebook</a></li>
-                                        <li class="h-list__item"><a href="#">instagram</a></li>
-                                        <li class="h-list__item"><a href="#">twitter</a></li>
-                                    </ul> <!-- /.h-list -->
-                                </div> <!-- /.author__social -->
+                                <div class="row">
+                                    <div class="author__avatar">
+                                        <img src="images/authors/phoebe-lai.jpg" alt="Phoebe Lai">
+                                    </div> <!-- /.author__avatar -->
+                                    <div class="author__profile">
+                                        <div class="author__name">
+                                            <h3 class="h3--author-name"><a href="#">Phoebe Lai</a></h3>
+                                        </div> <!-- /.author__name -->
+                                        <div class="author__title">
+                                            <h4 class="h4--author-title">Chief Editor</h4>
+                                        </div> <!-- /.author__title -->
+                                        <div class="author__social">
+                                            <ul class="h-list">
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">facebook</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">instagram</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">twitter</a></li>
+                                            </ul> <!-- /.h-list -->
+                                        </div> <!-- /.author__social -->
+                                    </div> <!-- /.author__profile -->
+                                </div> <!-- /.row -->
                             </div> <!-- /.author -->
                             <div class="author">
-                                <div class="author__avatar">
-                                    <img src="images/authors/andrea-chong.jpg" alt="Andrea Chong">
-                                </div> <!-- /.author__avatar -->
-                                <div class="author__name">
-                                    <h3 class="h3"><a href="#">Andrea Chong</a></h3>
-                                </div> <!-- /.author__name -->
-                                <div class="author__title">
-                                    <h4 class="h4">Content Strategist</h4>
-                                </div> <!-- /.author__title -->
-                                <div class="author__social">
-                                    <ul class="h-list">
-                                        <li class="h-list__item"><a href="#">facebook</a></li>
-                                        <li class="h-list__item"><a href="#">instagram</a></li>
-                                        <li class="h-list__item"><a href="#">twitter</a></li>
-                                    </ul> <!-- /.h-list -->
-                                </div> <!-- /.author__social -->
+                                <div class="row">
+                                    <div class="author__avatar">
+                                        <img src="images/authors/andrea-chong.jpg" alt="Andrea Chong">
+                                    </div> <!-- /.author__avatar -->
+                                    <div class="author__profile">
+                                        <div class="author__name">
+                                            <h3 class="h3--author-name"><a href="#">Andrea Chong</a></h3>
+                                        </div> <!-- /.author__name -->
+                                        <div class="author__title">
+                                            <h4 class="h4--author-title">Content Strategist</h4>
+                                        </div> <!-- /.author__title -->
+                                        <div class="author__social">
+                                            <ul class="h-list">
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">facebook</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">instagram</a></li>
+                                                <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle color__accent" href="#">twitter</a></li>
+                                            </ul> <!-- /.h-list -->
+                                        </div> <!-- /.author__social -->
+                                    </div> <!-- /.author__profile -->
+                                </div> <!-- /.row -->
                             </div> <!-- /.author -->
                         </div> <!-- /.widget__author -->
                     </div> <!-- /.widget -->
@@ -383,25 +396,25 @@
                         </div>
                         <div class="widget__gallery">
                             <ul class="gallery">
-                                <li class="gallery__item">
-                                    <img src="images/products/original-ring.jpg" alt="Original Ring">
+                                <li class="gallery__item--product bg__img">
+                                    <a href=""><img src="images/products/original-ring.jpg" alt="Original Ring"></a>
+                                </li> <!-- /.gallery__item--product -->
+                                <li class="gallery__item--product bg__img">
+                                    <a href=""><img src="images/products/premium-swinging-symmetry.jpg" alt="Premium Swinging Symmetry"></a>
+                                </li> <!-- /.gallery__item--product -->
+                                <li class="gallery__item--product bg__img gallery__omega">
+                                    <a href=""><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
                                 </li> <!-- /.gallery__item -->
-                                <li class="gallery__item">
-                                    <img src="images/products/premium-swinging-symmetry.jpg" alt="Premium Swinging Symmetry">
+                                <li class="gallery__item--product bg__img">
+                                    <a href=""><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
                                 </li> <!-- /.gallery__item -->
-                                <li class="gallery__item">
-                                    <img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring">
+                                <li class="gallery__item--product bg__img">
+                                    <a href=""><img src="images/products/joint-bracelet.jpg" alt="Joint Bracelet"></a>
                                 </li> <!-- /.gallery__item -->
-                                <li class="gallery__item">
-                                    <img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring">
+                                <li class="gallery__item--product bg__img gallery__omega">
+                                    <a href=""><img src="images/products/swinging-symmetry.jpg" alt=""></a>
                                 </li> <!-- /.gallery__item -->
-                                <li class="gallery__item">
-                                    <img src="images/products/joint-bracelet.jpg" alt="Joint Bracelet">
-                                </li> <!-- /.gallery__item -->
-                                <li class="gallery__item">
-                                    <img src="images/products/swinging-symmetry.jpg" alt="">
-                                </li> <!-- /.gallery__item -->
-                                <li class="clear-fix"></li>
+                                <li class="clearfix"></li>
                             </ul> <!-- /.gallery -->
                         </div> <!-- /.widget__gallery -->
                     </div> <!-- /.widget -->
@@ -499,18 +512,18 @@
                                 categories
                             </div> <!-- /.section-title -->
                             <nav>
-                                <ul class="v-list">
-                                    <li class="v-list__item"><a href="#">trending</a></li>
-                                    <li class="v-list__item"><a href="#">art & design</a></li>
-                                    <li class="v-list__item"><a href="#">lifestyle</a></li>
-                                    <li class="v-list__item"><a href="#">fashion</a></li>
+                                <ul class="v-list--footer">
+                                    <li class="v-list__item"><a class="v-list__link" href="#">trending</a></li>
+                                    <li class="v-list__item"><a class="v-list__link" href="#">art & design</a></li>
+                                    <li class="v-list__item"><a class="v-list__link" href="#">lifestyle</a></li>
+                                    <li class="v-list__item"><a class="v-list__link" href="#">fashion</a></li>
                                 </ul> <!-- /.v-list -->
                             </nav>
                             <nav>
-                                <ul class="v-list">
-                                    <li class="v-list__item"><a href="#">shop</a></li>
-                                    <li class="v-list__item"><a href="#">about</a></li>
-                                    <li class="v-list__item"><a href="#">contact us</a></li>
+                                <ul class="v-list--footer">
+                                    <li class="v-list__item"><a class="v-list__link" href="#">shop</a></li>
+                                    <li class="v-list__item"><a class="v-list__link" href="#">about</a></li>
+                                    <li class="v-list__item"><a class="v-list__link" href="#">contact us</a></li>
                                 </ul> <!-- /.v-list -->
                             </nav>
                         </div> <!-- /.sub-nav--footer -->    

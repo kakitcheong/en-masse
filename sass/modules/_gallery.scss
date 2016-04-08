@@ -2,11 +2,24 @@
 	&__item{
 		float: left;
 	}
+	&__item--product{
+		@extend .gallery__item;
+		width: 30%;
+		height: em(60);
+		margin-top: $el__spacer--xs/2;
+		margin-right: 5%;	
+	}
 	&__item--instagram{
 		@extend .gallery__item;
 		width: em(123);
 		height: em(123);
 		margin-right: 0;
-		
+		@include respond-to(md-screen){
+			width: em(165.666666667);
+			height: em(165.666666667);
+		}
 	}
+}
+.gallery__omega{
+	margin-right: 0;
 }

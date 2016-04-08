@@ -1,7 +1,6 @@
 .hero-carousel{
 	@extend .hidden-xs, .col-sm-12;
 	box-sizing: border-box;
-	margin-top: $el__spacer--md;
 	img{
 		width: 100%;
 		height: auto;
@@ -13,6 +12,9 @@
 .hero-carousel-slide{
 	&__img{
 		height: em(320);
+		@include respond-to(md-screen){
+			height: em(420);
+		}
 	}
 	&__overlay{
 		width: 100%;
@@ -25,8 +27,11 @@
 	&__container{
 		width: 86%;
 		position: absolute;
-		bottom: 10%;
 		left: 7%;
+		bottom: 10%;
+		@include respond-to(md-screen){
+			width: 70%;
+		}
 	}
 	&__meta{
 		display: block;

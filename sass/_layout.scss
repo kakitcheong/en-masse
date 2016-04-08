@@ -8,6 +8,17 @@
 .main{
 	@extend .container;
 }
+.feature-posts{
+	margin-top: $el__spacer--md;
+}
+.featured-list{
+	@include respond-to(sm-screen){
+		margin-top: em(20);
+	}
+	&__post{
+		@extend .col-xs-12, .col-sm-3;
+	}
+}
 .featured-products{
 	@extend .col-xs-12, .col-sm-offset-1, .col-sm-10;
 	@include respond-to(sm-screen){
@@ -15,14 +26,14 @@
 	}
 }
 .latest-articles{
-	@extend .col-xs-12, .col-md-8;
+	@extend .col-xs-12, .col-md-9;
 	margin-top: $el__spacer--xs;
 	@include respond-to(sm-screen){
 		margin-top: $el__spacer--sm;
 	}
 }
 .aside{
-	@extend .col-xs-12, .hidden-sm, .col-md-4;
+	@extend .col-xs-12, .hidden-sm, .col-md-3;
 	margin-top: $el__spacer--sm;	
 }
 .mobile-social{
@@ -36,7 +47,7 @@
 }
 .about{
 	&--footer{
-		@extend .col-xs-12, .col-sm-6;
+		@extend .col-xs-12, .col-sm-6, .col-md-4;
 	}
 }
 /*** helper classes ***/

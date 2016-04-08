@@ -18,15 +18,24 @@ html{
 	color: $color__grey--lighter;
 	@include trailer(2);
 	@include respond-to(sm-screen){
-		@include adjust-font-size-to(32px); /** temp. **/
+		@include adjust-font-size-to(32px);
+	}
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(38px);
+		@include trailer();
 	}
 	@include respond-to(lg-screen){
-		@include adjust-font-size-to(96px); /** temp. **/
+		//@include adjust-font-size-to(96px); /** temp. **/
 	}
 }
 .h3{
 	@include adjust-font-size-to(22px);
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(24px);
+		@include adjust-leading-to(3);
+	}
 	&--accent{
+		font-family: $secondary__font-family;
 		font-weight: 500;
 		color: $color__accent;
 		text-transform: uppercase;
@@ -39,18 +48,32 @@ html{
 			margin: 0 0 0 0;
 			@include leader();
 		}
+		@include respond-to(md-screen){
+			@include adjust-font-size-to(16px);
+			@include adjust-leading-to(3);
+		}
+	}
+	&--author-name{
+		@extend .h3;
+		@include adjust-font-size-to(18px);
 	}
 }
 .h4{
 	font-family: $secondary__font-family;
 	@include adjust-font-size-to(14px);
 	letter-spacing: em(1);
-}
-.h4--reversed{
-	@extend .h4;
-	color: $color__reversed;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	&--reversed{
+		@extend .h4;
+		color: $color__reversed;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	&--author-title{
+		@extend .h4;
+		font-family: $base__font-family;
+		color: $color__grey;
+		letter-spacing: 0;
+	}
 }
 .section-title{
 	@extend .h4, .pull--center;
@@ -88,7 +111,11 @@ html{
 .paragraph{
 	color: $color__grey;
 	font-family: $base__font-family;
-	font-weight: 400;    
+	font-weight: 400;
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(14px);
+		@include adjust-leading-to(4);
+	}    
 }
 .paragraph--footer{
 	@extend .paragraph;

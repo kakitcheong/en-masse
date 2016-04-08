@@ -1,8 +1,0 @@
-.featured-list{
-	@include respond-to(sm-screen){
-		margin-top: em(20);
-	}
-	&__post{
-		@extend .col-xs-12, .col-sm-3;
-	}
-}
