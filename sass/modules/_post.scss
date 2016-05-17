@@ -1,6 +1,12 @@
 .post{
 	@extend .col-xs-12, .col-sm-6;
 	margin-top: $el__spacer--xs;
+	&--alpha{
+		margin-top: 0;
+		@include respond-to(sm-screen){
+			margin-top: $el__spacer--xs;
+		}
+	}
 	&__img--featured{
 		height: em(180);
 		@include respond-to(sm-screen){

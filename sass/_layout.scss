@@ -9,7 +9,9 @@
 	@extend .container;
 }
 .feature-posts{
-	margin-top: $el__spacer--md;
+	@include respond-to(md-screen){
+		margin-top: $el__spacer--md;	
+	}
 }
 .featured-list{
 	@include respond-to(sm-screen){

@@ -8781,13 +8781,13 @@ button.close {
 
 @media (max-width: 767px) {
   /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-xs, .visible--desktop, .navigation-header__soical, .sub-nav--footer, .main-navigation__search-box, .hero-carousel, .footer-top, .carousel__item-title, .widget, .widget--alpha, .logo-alt {
+  .hidden-xs, .visible--desktop, .navigation-header__soical, .sub-nav--footer, .hero-carousel, .footer-top, .carousel__item-title, .widget, .widget--alpha, .logo-alt {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 18, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-sm, .aside, .visible--desktop, .navigation-header__soical, .sub-nav--footer, .main-navigation__search-box {
+  .hidden-sm, .aside, .visible--desktop, .navigation-header__soical, .sub-nav--footer {
     display: none !important;
   }
 }
@@ -9171,61 +9171,63 @@ html {
 }
 
 /*** header layout ***/
-/* line 11, ../sass/_layout.scss */
-.feature-posts {
-  margin-top: 2.8125em;
+@media only screen and (min-width: 62em) {
+  /* line 11, ../sass/_layout.scss */
+  .feature-posts {
+    margin-top: 2.8125em;
+  }
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 14, ../sass/_layout.scss */
+  /* line 16, ../sass/_layout.scss */
   .featured-list {
     margin-top: 1.25em;
   }
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 22, ../sass/_layout.scss */
+  /* line 24, ../sass/_layout.scss */
   .featured-products {
     margin-top: 2.8125em;
   }
 }
 
-/* line 28, ../sass/_layout.scss */
+/* line 30, ../sass/_layout.scss */
 .latest-articles {
   margin-top: 1em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 28, ../sass/_layout.scss */
+  /* line 30, ../sass/_layout.scss */
   .latest-articles {
     margin-top: 1.875em;
   }
 }
 
-/* line 35, ../sass/_layout.scss */
+/* line 37, ../sass/_layout.scss */
 .aside {
   margin-top: 1.875em;
 }
 
-/* line 39, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 .mobile-social {
   font-size: 1.5em;
   line-height: 1.25em;
   margin-top: 1.875em;
 }
 
-/* line 44, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 .instagram-feed {
   margin-bottom: 2.8125em;
 }
 
 /*** helper classes ***/
-/* line 69, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .color__accent {
   color: #C99E66;
 }
 
 /*** javascript hook for putting img into it's parent's background ***/
-/* line 73, ../sass/_layout.scss */
+/* line 75, ../sass/_layout.scss */
 .bg__img {
   background-position: center center;
   background-size: cover;
@@ -9233,12 +9235,12 @@ html {
 }
 
 /*** layout elements ***/
-/* line 81, ../sass/_layout.scss */
+/* line 83, ../sass/_layout.scss */
 .center__btn {
   margin-top: 1.875em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 81, ../sass/_layout.scss */
+  /* line 83, ../sass/_layout.scss */
   .center__btn {
     margin-top: 2.8125em;
   }
@@ -9330,7 +9332,7 @@ last update: 31/03/2016
   overflow: hidden;
   max-height: 0;
   border-bottom: 1px solid #D4D4D4;
-  margin-top: 1.875em;
+  margin-top: 1em;
   -moz-transition: max-height, 0.4s, ease-in-out;
   -o-transition: max-height, 0.4s, ease-in-out;
   -webkit-transition: max-height, 0.4s, ease-in-out;
@@ -9388,10 +9390,11 @@ last update: 31/03/2016
     margin-bottom: 0;
   }
 }
-/* line 48, ../sass/modules/_main-navigation.scss */
-.main-navigation__search-box {
-  display: inline-block;
-  margin-left: 1em;
+
+/* line 2, ../sass/modules/_drop-down.scss */
+.drop-down__container {
+  position: absolute;
+  left: -999em;
 }
 
 /* line 1, ../sass/modules/_hero-carousel.scss */
@@ -9499,21 +9502,23 @@ last update: 31/03/2016
 }
 /* line 26, ../sass/modules/_footer.scss */
 .footer-bottom__inner {
-  padding: 1.5em 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 @media only screen and (min-width: 48em) {
   /* line 26, ../sass/modules/_footer.scss */
   .footer-bottom__inner {
-    padding: 1.875em 0;
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
   }
 }
 
-/* line 34, ../sass/modules/_footer.scss */
+/* line 36, ../sass/modules/_footer.scss */
 .logo-alt {
   float: left;
 }
 
-/* line 37, ../sass/modules/_footer.scss */
+/* line 39, ../sass/modules/_footer.scss */
 .footer-copy {
   color: #E4E4E4;
   text-transform: uppercase;
@@ -9521,7 +9526,7 @@ last update: 31/03/2016
   line-height: 1.5em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 37, ../sass/modules/_footer.scss */
+  /* line 39, ../sass/modules/_footer.scss */
   .footer-copy {
     float: left;
     margin-left: 1em;
@@ -9533,32 +9538,42 @@ last update: 31/03/2016
   margin-top: 1em;
 }
 /* line 4, ../sass/modules/_post.scss */
+.post--alpha {
+  margin-top: 0;
+}
+@media only screen and (min-width: 48em) {
+  /* line 4, ../sass/modules/_post.scss */
+  .post--alpha {
+    margin-top: 1em;
+  }
+}
+/* line 10, ../sass/modules/_post.scss */
 .post__img--featured {
   height: 11.25em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 4, ../sass/modules/_post.scss */
+  /* line 10, ../sass/modules/_post.scss */
   .post__img--featured {
     height: 5em;
   }
 }
 @media only screen and (min-width: 62em) {
-  /* line 4, ../sass/modules/_post.scss */
+  /* line 10, ../sass/modules/_post.scss */
   .post__img--featured {
     height: 7.5em;
   }
 }
-/* line 13, ../sass/modules/_post.scss */
+/* line 19, ../sass/modules/_post.scss */
 .post__img {
   height: 9.0625em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 13, ../sass/modules/_post.scss */
+  /* line 19, ../sass/modules/_post.scss */
   .post__img {
     height: 11.25em;
   }
 }
-/* line 19, ../sass/modules/_post.scss */
+/* line 25, ../sass/modules/_post.scss */
 .post__label {
   display: inline-block;
   background-color: #C99E66;
@@ -9567,20 +9582,20 @@ last update: 31/03/2016
   top: 1em;
   left: 0.5em;
 }
-/* line 28, ../sass/modules/_post.scss */
+/* line 34, ../sass/modules/_post.scss */
 .post__cat-link:hover {
   color: #292929;
 }
-/* line 32, ../sass/modules/_post.scss */
+/* line 38, ../sass/modules/_post.scss */
 .post__title {
   margin-top: 0.75em;
 }
-/* line 35, ../sass/modules/_post.scss */
+/* line 41, ../sass/modules/_post.scss */
 .post__excerpt {
   margin-top: 0.375em;
   margin-bottom: 0.75em;
 }
-/* line 40, ../sass/modules/_post.scss */
+/* line 46, ../sass/modules/_post.scss */
 .post__meta {
   color: #9E9E9E;
   font-size: 0.75em;
