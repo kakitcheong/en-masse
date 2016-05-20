@@ -35,10 +35,19 @@
 	}
 }
 .v-list{
-	&--footer{
-		@include adjust-font-size-to(14px);
-		color: $color__grey--light;
+	&__item{
+		text-align: left;
+		@include adjust-font-size-to(13px);
 		text-transform: uppercase;
+		margin: em(5) 0 0 0;
+	}
+		&--mega__item{
+		@extend .v-list__item;
+		color: $color__grey;
+		letter-spacing: em(1);
+	}
+	&--footer{
+		color: $color__grey--light;
 		float: left;
 		margin-right: em(30);
 		@include adjust-leading-to(4);
@@ -85,6 +94,20 @@ input[type="email"] {
 		left: em(-20);
 		padding: em(4) em(4);
 		border: none;
+	}
+}
+/*** custom control ***/
+.custom-control{
+	margin-top: $el__spacer--sm;
+	&__item{
+		background-color: $color__accent;
+		color: $color__wht;
+	}
+	&__btn{
+		padding: em(8) em(10);
+	}
+	&__btn:hover{
+		color: $color__grey;
 	}
 }
 /*** alternative logo ***/

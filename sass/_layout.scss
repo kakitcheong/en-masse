@@ -10,7 +10,7 @@
 }
 .feature-posts{
 	@include respond-to(md-screen){
-		margin-top: $el__spacer--md;	
+		//margin-top: $el__spacer--md;	
 	}
 }
 .featured-list{

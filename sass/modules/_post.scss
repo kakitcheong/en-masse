@@ -1,4 +1,7 @@
 .post{
+	&--carousel{
+		width: em(220);
+	}
 	@extend .col-xs-12, .col-sm-6;
 	margin-top: $el__spacer--xs;
 	&--alpha{
@@ -22,6 +25,9 @@
 			height: em(180);
 		}
 	}
+	&__img--carousel{
+		height: em(120);
+	}
 	&__label{
 		display: inline-block;
 		background-color: $color__accent;
@@ -37,6 +43,10 @@
 	}
 	&__title{
 		@include leader(2);
+	}
+	&__title--carousel{
+		@extend .post__title;
+		text-align: left;
 	}
 	&__excerpt{
 		@extend .paragraph;

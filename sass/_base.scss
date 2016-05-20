@@ -4,7 +4,7 @@ html {
 }
 body{
 	background-color: $color__background;	
-	font-family: $base__font-family;	
+	font-family: $base__font-family;
 }
 a{
 	color: inherit;
@@ -13,7 +13,6 @@ a{
 	&:hover, &:focus{
 		color: $color__accent;
 		text-decoration: none !important;
-		@include transition(color, 0.6s, ease-in);
+		@include transition(color, 0.6s, ease-out);
 	}
 }
-/*** temp style ***/

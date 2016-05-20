@@ -6,6 +6,7 @@
 		height: auto;
 	}
 	&__item{
+		@extend .item;
 		position: relative;
 	}
 }
@@ -16,7 +17,7 @@
 			height: em(420);
 		}
 		@include respond-to(lg-screen){
-			height: em(520);
+			height: em(460);
 		}
 	}
 	&__overlay{

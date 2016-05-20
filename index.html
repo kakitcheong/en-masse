@@ -24,6 +24,8 @@
         <!-- owl carousel style -->
         <link rel="stylesheet" href="bower_components/owl/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="bower_components/owl/owl-carousel/owl.theme.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- custom style -->
         <link rel="stylesheet" href="stylesheets/style.css">
         <!-- polymer elements -->
@@ -36,15 +38,17 @@
 		<header class="header">
             <nav class="header__navigation">
                 <div class="navigation-header">
-                    <button class="navigation-header__toggle">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <button class="navigation-header__toggle collapsed">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
                     </button> <!-- /.navigation__toggle -->
+                    <!-- ### remove header shopping cart 
                     <div class="navigation-header__cart">
                         <a href="#">view cart</a> ( 0 )
-                    </div> <!-- /.navigation__cart -->
+                    </div> 
+                    END ### remove header shopping cart -->
                     <div class="navigation-header__soical">
                         <ul class="h-list">
                             <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">facebook</a></li>
@@ -59,18 +63,111 @@
                         <picture>
                             <source srcset="images/global/mastheads/masthead-xs.svg" media="(max-width:767px)"> <!-- x-small logo -->
                             <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:768px) and (max-width: 991px)"> <!-- small logo -->
-                            <source srcset="images/global/mastheads/masthead-md.svg" media="(min-width:992px) and (max-width: 1119px)"> <!-- medium logo -->
-                            <source srcset="images/global/mastheads/masthead-lg.svg" media="(min-width:1119px)"> <!-- large logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:992px) and (max-width: 1119px)"> <!-- medium logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:1119px)"> <!-- large logo -->
                             <img src="images/global/mastheads/masthead-xs.svg" alt="">  
                         </picture>
                     </a>
                 </div> <!-- /.navigation-header__masthead -->
                 <ul class="main-navigation">
-                    <li class="main-navigation__item">
-                        <a class="main-navigation__link--alpha" href="#">trending</a>
-                        <div class="drop-down__container">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio facilis ex quae nesciunt, pariatur, voluptatum quas adipisci iure veniam impedit harum! Neque natus, necessitatibus ipsa sequi inventore cum magni.
-                        </div> <!-- /.drop-down__container -->
+                    <li class="main-navigation__item mega-dropdown">
+                        <a href="#" class="main-navigation__link--alpha mega-dropdown__toggle">trending <span class="fa fa-chevron-down"></span></a>
+                        <ul class="mega-dropdown__menu">
+                            <!-- 1--4 -->
+                            <div class="container">
+                                <li class="mega-dropdown__item">
+                                    <ul class="v-list--mega">
+                                        <li class="v-list__item">
+                                            <div class="section-title">
+                                                Sub Categories
+                                            </div> <!-- /.section-title -->
+                                        </li> <!-- /.v-list__item -->
+                                        <li class="v-list--mega__item"><a href="#">test 1</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 2</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 3</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 4</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 5</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 6</a></li>
+                                    </ul> <!-- /.v-list -->
+                                </li> <!-- /.mega-dropdown__item -->
+                                <!-- 3--4 -->
+                                <li class="mega-dropdown__item--carousel">
+                                    <ul>
+                                        <li>
+                                            <div class="section-title">Latest Articles</div>
+                                        </li>
+                                        <div class="carousel owl-carousel--dropdown">
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Is The New Android Wear that good?</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Top Five Places to have Breakfast in Berlin</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Top Five Places to have Breakfast in Berlin</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Top Five Places to have Breakfast in Berlin</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Is The New Android Wear that good?</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" >Is The New Android Wear that good?</h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                        </div> <!-- /.carousel -->
+                                        <div class="custom-control">
+                                            <ul class="custom-control__list h-list">
+                                                <li class="custom-control__item h-list__item"><a href="#" id="custom-prev" class="custom-control__btn">&#10094;</a></li>
+                                                <li class="custom-control__item h-list__item"><a href="#" id="custom-next" class="custom-control__btn">&#10095;</a></li>
+                                            </ul> <!-- /.custom-control__list -->
+                                        </div> <!-- /.custom-control -->
+                                    </ul>       
+                                </li> <!-- /.mega-dropdown__item -->
+                            </div> <!-- /.container -->
+                        </ul> <!-- /.mega-dropdown__menu -->
                     </li> <!-- /.main-navigation__item -->
                     <li class="main-navigation__item"><a class="main-navigation__link" href="#">art & design</a></li> <!-- /.main-navigation__item -->
                     <li class="main-navigation__item"><a class="main-navigation__link" href="#">lifestyle</a></li> <!-- /.main-navigation__item -->
@@ -82,7 +179,7 @@
         <main class="main">
             <section class="feature-posts">
                 <div class="row">
-                    <div class="hero-carousel">
+                    <div id="hero-carousel" class="hero-carousel">
                         <div class="hero-carousel__item">
                             <div class="hero-carousel-slide">
                                 <div class="hero-carousel-slide__img bg__img">
@@ -105,7 +202,73 @@
                                 </div> <!-- /.hero-carousel-slide__container -->
                             </div> <!-- /.hero-carousel-slide -->
                         </div> <!-- /.hero-carousel__item -->
-                    </div> <!-- /.hero-carousel -->
+                        <div class="hero-carousel__item">
+                            <div class="hero-carousel-slide">
+                                <div class="hero-carousel-slide__img bg__img">
+                                    <div>
+                                        <img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002">
+                                    </div>
+                                </div> <!-- /.hero-carousel-slide__img -->
+                                <div class="hero-carousel-slide__overlay"></div>
+                                <div class="hero-carousel-slide__container">
+                                    <div class="hero-carousel-slide__post-category">
+                                        <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
+                                    </div> <!-- /.hero-carousel-slide__post-category --> 
+                                    <div class="hero-carousel-slide__post-title">
+                                        <h2 class="h2--hero"><a href="#">Facts about National Parks all around The World</a></h2>
+                                    </div> <!-- /.hero-carousel-slide__post-title --> 
+                                    <div class="hero-carousel-slide__meta">
+                                        <iron-icon src="images/global/icons/clock-16px-accent.svg"></iron-icon>
+                                        <span>21 FEB 2016</span>
+                                    </div> <!-- /.hero-carousel-slide__post-meta -->
+                                </div> <!-- /.hero-carousel-slide__container -->
+                            </div> <!-- /.hero-carousel-slide -->
+                        </div> <!-- /.hero-carousel__item -->
+                        <div class="hero-carousel__item">
+                            <div class="hero-carousel-slide">
+                                <div class="hero-carousel-slide__img bg__img">
+                                    <div>
+                                        <img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003">
+                                    </div>
+                                </div> <!-- /.hero-carousel-slide__img -->
+                                <div class="hero-carousel-slide__overlay"></div>
+                                <div class="hero-carousel-slide__container">
+                                    <div class="hero-carousel-slide__post-category">
+                                        <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
+                                    </div> <!-- /.hero-carousel-slide__post-category --> 
+                                    <div class="hero-carousel-slide__post-title">
+                                        <h2 class="h2--hero"><a href="#">World’s Craziest Tasting Menus which You Simply have to try</a></h2>
+                                    </div> <!-- /.hero-carousel-slide__post-title --> 
+                                    <div class="hero-carousel-slide__meta">
+                                        <iron-icon src="images/global/icons/clock-16px-accent.svg"></iron-icon>
+                                        <span>14 FEB 2016</span>
+                                    </div> <!-- /.hero-carousel-slide__post-meta -->
+                                </div> <!-- /.hero-carousel-slide__container -->
+                            </div> <!-- /.hero-carousel-slide -->
+                        </div> <!-- /.hero-carousel__item -->
+                        <div class="hero-carousel__item">
+                            <div class="hero-carousel-slide">
+                                <div class="hero-carousel-slide__img bg__img">
+                                    <div>
+                                        <img src="images/posts/featured/featured-dummy-004.jpg" alt="featured dummy 004">
+                                    </div>
+                                </div> <!-- /.hero-carousel-slide__img -->
+                                <div class="hero-carousel-slide__overlay"></div>
+                                <div class="hero-carousel-slide__container">
+                                    <div class="hero-carousel-slide__post-category">
+                                        <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
+                                    </div> <!-- /.hero-carousel-slide__post-category --> 
+                                    <div class="hero-carousel-slide__post-title">
+                                        <h2 class="h2--hero"><a href="#">Decoration Ideas for Your New Home Sweet Home</a></h2>
+                                    </div> <!-- /.hero-carousel-slide__post-title --> 
+                                    <div class="hero-carousel-slide__meta">
+                                        <iron-icon src="images/global/icons/clock-16px-accent.svg"></iron-icon>
+                                        <span>16 JAN 2016</span>
+                                    </div> <!-- /.hero-carousel-slide__post-meta -->
+                                </div> <!-- /.hero-carousel-slide__container -->
+                            </div> <!-- /.hero-carousel-slide -->
+                        </div> <!-- /.hero-carousel__item -->
+                    </div> <!-- /#hero -->
                 </div> <!-- /.row -->
                 <div class="row">
                     <div class="featured-list">
@@ -555,6 +718,7 @@
             $(document).ready(function(){
                 //menu toggle
                 $(".navigation-header__toggle").click(function(){
+                    $(this).toggleClass("collapsed");
                     $(".main-navigation").toggleClass("is__open");
                 });
                 //replace imgs inside carousel with a background image
@@ -563,7 +727,7 @@
                     $(this).parents().eq(1).css({'background-image' : 'url('+ imgSrc +')'});
                     $(this).remove();
                 });
-                //owl carousel
+                //owl carousel -- feature products
                 $(".owl-carousel").owlCarousel({
                     items: 5,
                     itemsDesktop: [1199,5],
@@ -575,6 +739,70 @@
                     itemsScaleUp: false,
                     navigation: false // turn on and off navigation
                 });
+                //owl carousel -- mega dropdown
+                $(".owl-carousel--dropdown").owlCarousel({
+                    items: 4,
+                    itemsDesktop: [1199,2],
+                    itemsDesktopSmall: [980,2],
+                    navigation: false,
+                    pagination: false,
+                    lazyLoad: true,
+                    loop: true,
+                });
+                $("#hero-carousel").owlCarousel({
+                    items:1,
+                    navigation: false,
+                    pagination: false
+                });
+                // custom navigation
+                $("#custom-next").click(function(){
+                    $(".owl-carousel--dropdown").trigger("owl.next");
+                });
+                $("#custom-prev").click(function(){
+                    $(".owl-carousel--dropdown").trigger("owl.prev");
+                });
+                /*** mega menu ***/
+                var megaStart = $(".hero-carousel").offset();
+                $(".mega-dropdown__menu").css("top", megaStart.top - 2);
+                /*** mega menu helper function ***/
+                var timeOut = 0;
+                var hovering = false;
+                /***** Drop Down Menu Function *****/
+                function dropDownMenuFn(){
+                    $(".mega-dropdown__menu").hide();
+                    $(".mega-dropdown__toggle").on("mouseenter", function(){
+                        hovering = true;
+                        $(".mega-dropdown__menu").stop(true, true).slideDown(600);
+                        if(timeOut > 0){
+                            clearTimeout(timeOut);
+                        }
+                    })
+                    .on("mouseleave", function(){
+                        resetHover();
+                    });
+                    $(".mega-dropdown__menu").on("mouseenter", function(){
+                        hovering = true;
+                        startTimeout();
+                    })
+                    .on("mouseleave", function(){
+                        resetHover();
+                    });
+                };            
+                function startTimeout() {
+                    timeOut = setTimeout(function () {
+                        closeMenu();
+                    }, 1000);
+                };
+                function closeMenu() {
+                    if (!hovering) {
+                        $('.mega-dropdown__menu').stop(true, true).slideUp(500);
+                    }
+                };
+                function resetHover() {
+                    hovering = false;
+                    startTimeout();
+                };
+                dropDownMenuFn();
             });
         </script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site"s ID. 

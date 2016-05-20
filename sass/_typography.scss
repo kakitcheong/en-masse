@@ -54,6 +54,9 @@ html{
 		@extend .h3;
 		@include adjust-font-size-to(18px);
 	}
+	&--carousel{
+		@extend .h3--author-name;
+	}
 }
 .h4{
 	font-family: $secondary__font-family;
