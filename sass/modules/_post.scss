@@ -10,6 +10,13 @@
 			margin-top: $el__spacer--xs;
 		}
 	}
+	// image on hover interaction
+	&__img-overlay{
+		z-index: 98;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
 	&__img--featured{
 		height: em(180);
 		@include respond-to(sm-screen){
@@ -33,6 +40,7 @@
 		background-color: $color__accent;
 		padding: em(7) em(12);
 		position: relative;
+		z-index: 99;
 		top: em(16);
 		left: em(8);
 	}
@@ -57,5 +65,94 @@
 		color: $color__grey--light;
 		@include adjust-font-size-to(12px);
 		@include leading-border();
+	}
+	/*** post variation -- category page ***/
+	&--cat-lg{
+		@extend .col-xs-12;
+		margin-top: $el__spacer--xs;
+		@include respond-to(md-screen){
+			margin-top: $el__spacer--md;
+			margin-bottom: $el__spacer--xs;
+		}
+	}
+	&--cat-lg--alpha{
+		@extend .col-xs-12;
+	}
+	&--cat-lg__img{
+		@include respond-to(md-screen){
+			height: em(420);
+		}
+	}
+	&--cat-lg__wrap{
+		@include respond-to(md-screen){
+	
+		}
+	}
+	&__excerpt--cat-lg{
+		@extend .post__excerpt;
+		width: 85%;
+	}
+}
+/*** single post style ***/
+.post-opening{
+	@extend .col-xs-12;
+	box-sizing: border-box;
+	height: em(320);
+	margin-top: $el__spacer--xs;
+	@include respond-to(md-screen){
+		height: em(420);
+		margin-top: $el__spacer--sm;
+	}
+	@include respond-to(lg-screen){
+		height: em(520);
+	}
+	&__container-outer{
+		width:70%;
+    height:100%;
+    overflow:hidden;
+		display:table;
+		margin: 0 auto;
+	}
+	&__container-inner{
+		display:table-cell;
+    position:relative;
+		vertical-align:middle;
+		text-align:center;	
+	}
+	&__meta{
+		margin-top: $el__spacer--lg;
+	}
+}
+.post-content{
+	@extend .col-xs-12, .col-sm-9;
+	margin-top: $el__spacer--sm;
+	&__meta{
+		
+	}
+	&__section{
+		@extend .row;
+		margin-top: $el__spacer--sm;
+	}
+	&__text{
+		@extend .col-xs-12, .col-sm-offset-1, .col-sm-11, .col-md-offset-2, .col-md-10;	
+	}
+	&__img{
+		@extend .col-xs-12;
+	}
+}
+.meta{
+	padding: 0 0 $el__spacer--xs 0;
+	border-bottom: $el__border;
+	&__author-avatar{
+		@extend .col-xs-2;
+		img{
+			@extend .pull--right;
+			width: 50%;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+	}
+	&__data{
+		@extend .col-xs-10;	
 	}
 }

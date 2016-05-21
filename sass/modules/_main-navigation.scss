@@ -8,6 +8,7 @@
 		max-height: em(80);
 		margin-top: $el__spacer--sm;
 		border-top: $el__border;
+		border-bottom: $el__border;
 	}
 	&__item{
 		display: inline;
@@ -39,7 +40,8 @@
 			margin-bottom: 0;
 		}
 	}
-	&__link:hover{
-		
+	&__link--selected{
+		@extend .main-navigation__link;
+		color: $color__accent;
 	}
 }

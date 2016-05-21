@@ -13,6 +13,15 @@ html{
 	font-weight: 400;
 	color: $color__grey--dark;
 }
+.h1--opening{
+	@extend .h1;
+	@include adjust-font-size-to(42px);
+}
+.h1--single-opening{
+	@extend .h1--opening;
+	color: $color__grey--lighter;
+	margin-top: $el__spacer--lg;
+}
 .h2--hero{
 	@extend .h2;
 	color: $color__grey--lighter;
@@ -24,6 +33,15 @@ html{
 		@include adjust-font-size-to(38px);
 		@include trailer();
 	}
+}
+.h2--cat-lg{
+	@extend .h2;
+	@include adjust-font-size-to(22px);
+	@include leader();
+	@include trailer();
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(32px);	
+	}	
 }
 .h3{
 	@include adjust-font-size-to(22px);
@@ -53,6 +71,20 @@ html{
 	&--author-name{
 		@extend .h3;
 		@include adjust-font-size-to(18px);
+	}
+	&--author-name-meta{
+		@extend .h3--author-name;
+		@include adjust-font-size-to(22px);
+		text-transform: uppercase;
+		letter-spacing: em(1);
+		margin-bottom: $el__spacer--xs*0.3;
+	}
+	&--author-name-meta:before{
+		content: "by ";
+		text-transform: lowercase;
+		font-style: italic;
+		@include adjust-font-size-to(12px);
+		letter-spacing: 0;
 	}
 	&--carousel{
 		@extend .h3--author-name;
@@ -112,14 +144,20 @@ html{
 	color: $color__grey;
 	font-family: $base__font-family;
 	font-weight: 400;
+	margin-top: $el__spacer--xs;
 	@include respond-to(md-screen){
 		@include adjust-font-size-to(14px);
 		@include adjust-leading-to(4);
+	}
+	&--footer{
+		@extend .paragraph;
+		color: $color__footer-text;
+	}
+	&--opening{
+		@extend .h3;
+		@include adjust-font-size-to(22px);
+		@include adjust-leading-to(3);
 	}    
-}
-.paragraph--footer{
-	@extend .paragraph;
-	color: $color__footer-text;
 }
 .meta{
 	color: $color__grey--light;

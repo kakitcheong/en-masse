@@ -110,6 +110,51 @@ input[type="email"] {
 		color: $color__grey;
 	}
 }
+/*** breadcrumb ***/
+.breadcrumb-bar{
+	&__list{
+		@extend .breadcrumb;
+		background-color: transparent;
+		padding: $el__spacer--xs $el__spacer--xs*1.2;
+	}
+	&__item{
+
+	}
+	&__link{
+		@include adjust-font-size-to(13px);
+		text-transform: uppercase;
+		letter-spacing: em(2);
+		color: $color__grey;	
+	}
+	&__link--active{
+		@extend .breadcrumb-bar__link;
+		color: $color__accent;
+	}
+}
+.breadcrumb-bar__list > li + li:before{
+	content: "> ";
+	padding: 0 em(6);
+	color: $color__accent;
+}
+/*** page-title ***/
+.page-opening{
+	padding: 0 0 $el__spacer--xs $el__spacer--xs*1.2 ;
+	border-bottom: $el__border;
+	&__title{
+		color: $color__accent;
+	}
+	&__title:before{
+		content: "All articles from ";
+	}
+	&__title:after{
+		content: " category";
+	}
+}
+/*** read more ***/
+.read-more{
+	@extend .pull--right;
+	text-transform: uppercase;
+}
 /*** alternative logo ***/
 .logo-alt{
 	@extend .hidden-xs;

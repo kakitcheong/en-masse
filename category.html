@@ -24,6 +24,11 @@
         <!-- owl carousel style -->
         <link rel="stylesheet" href="bower_components/owl/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="bower_components/owl/owl-carousel/owl.theme.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- lazyload xt style -->
+        <link rel="stylesheet" href="bower_components/owl/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="bower_components/lazyloadxt/dist/jquery.lazyloadxt.spinner.css">
         <!-- custom style -->
         <link rel="stylesheet" href="stylesheets/style.css">
         <!-- polymer elements -->
@@ -33,18 +38,20 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		<header class="header">
+        <header class="header">
             <nav class="header__navigation">
                 <div class="navigation-header">
-                    <button class="navigation-header__toggle">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <button class="navigation-header__toggle collapsed">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
                     </button> <!-- /.navigation__toggle -->
+                    <!-- ### remove header shopping cart 
                     <div class="navigation-header__cart">
                         <a href="#">view cart</a> ( 0 )
-                    </div> <!-- /.navigation__cart -->
+                    </div> 
+                    END ### remove header shopping cart -->
                     <div class="navigation-header__soical">
                         <ul class="h-list">
                             <li class="h-list__item"><a class="h-list__link ss-icon ss-social-circle" href="#">facebook</a></li>
@@ -59,186 +66,200 @@
                         <picture>
                             <source srcset="images/global/mastheads/masthead-xs.svg" media="(max-width:767px)"> <!-- x-small logo -->
                             <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:768px) and (max-width: 991px)"> <!-- small logo -->
-                            <source srcset="images/global/mastheads/masthead-md.svg" media="(min-width:992px) and (max-width: 1119px)"> <!-- medium logo -->
-                            <source srcset="images/global/mastheads/masthead-lg.svg" media="(min-width:1119px)"> <!-- large logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:992px) and (max-width: 1119px)"> <!-- medium logo -->
+                            <source srcset="images/global/mastheads/masthead-sm.svg" media="(min-width:1119px)"> <!-- large logo -->
                             <img src="images/global/mastheads/masthead-xs.svg" alt="">  
                         </picture>
                     </a>
                 </div> <!-- /.navigation-header__masthead -->
                 <ul class="main-navigation">
-                    <li class="main-navigation__item"><a class="main-navigation__link--alpha" href="#">trending</a></li> <!-- /.main-navigation__item -->
+                    <li class="main-navigation__item mega-dropdown">
+                        <a href="#" class="main-navigation__link--alpha mega-dropdown__toggle">trending <span class="fa fa-chevron-down"></span></a>
+                        <ul class="mega-dropdown__menu">
+                            <!-- 1--4 -->
+                            <div class="container">
+                                <li class="mega-dropdown__item">
+                                    <ul class="v-list--mega">
+                                        <li class="v-list__item">
+                                            <div class="section-title">
+                                                Sub Categories
+                                            </div> <!-- /.section-title -->
+                                        </li> <!-- /.v-list__item -->
+                                        <li class="v-list--mega__item"><a href="#">test 1</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 2</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 3</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 4</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 5</a></li>
+                                        <li class="v-list--mega__item"><a href="#">test 6</a></li>
+                                    </ul> <!-- /.v-list -->
+                                </li> <!-- /.mega-dropdown__item -->
+                                <!-- 3--4 -->
+                                <li class="mega-dropdown__item--carousel">
+                                    <ul>
+                                        <li>
+                                            <div class="section-title">Latest Articles</div>
+                                        </li>
+                                        <div class="carousel owl-carousel--dropdown">
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Is The New Android Wear that good?</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Top Five Places to have Breakfast in Berlin</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Top Five Places to have Breakfast in Berlin</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Top Five Places to have Breakfast in Berlin</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Is The New Android Wear that good?</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                            <div class="carousel__item">
+                                                <div class="post--carousel">
+                                                    <div class="post__img--carousel bg__img">
+                                                     <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>    
+                                                    </div>
+                                                    <div class="post__title--carousel">
+                                                        <h3 class="h3--carousel" ><a href="#">Is The New Android Wear that good?</a></h3>
+                                                    </div> <!-- /.post__title--carousel -->
+                                                </div> <!-- /.post--carousel -->
+                                            </div> <!-- /.carousel__item -->
+                                        </div> <!-- /.carousel -->
+                                        <div class="custom-control">
+                                            <ul class="custom-control__list h-list">
+                                                <li class="custom-control__item h-list__item"><a href="#" id="custom-prev" class="custom-control__btn">&#10094;</a></li>
+                                                <li class="custom-control__item h-list__item"><a href="#" id="custom-next" class="custom-control__btn">&#10095;</a></li>
+                                            </ul> <!-- /.custom-control__list -->
+                                        </div> <!-- /.custom-control -->
+                                    </ul>       
+                                </li> <!-- /.mega-dropdown__item -->
+                            </div> <!-- /.container -->
+                        </ul> <!-- /.mega-dropdown__menu -->
+                    </li> <!-- /.main-navigation__item -->
                     <li class="main-navigation__item"><a class="main-navigation__link" href="#">art & design</a></li> <!-- /.main-navigation__item -->
-                    <li class="main-navigation__item"><a class="main-navigation__link" href="#">lifestyle</a></li> <!-- /.main-navigation__item -->
+                    <li class="main-navigation__item"><a class="main-navigation__link--selected" href="#">lifestyle</a></li> <!-- /.main-navigation__item -->
                     <li class="main-navigation__item"><a class="main-navigation__link" href="#">fashion</a></li> <!-- /.main-navigation__item -->
                     <li class="main-navigation__item"><a class="main-navigation__link--omega" href="#">shop</a></li> <!-- /.main-navigation__item -->
-                    <li class="main-navigation__item">
-                        <div class="main-navigation__search-box">
-                            <input type="text" placeholder="search" class="search-box__input-text">
-                            <button type="submit" class="search-box__input-btn"><iron-icon src="images/global/icons/search-18px.svg"></iron-icon></button>
-                        </div> <!-- /.main-navigation__search-box -->
-                    </li> <!-- /.main-navigation__item -->
                 </ul> <!-- /.main-navigation -->
             </nav> <!-- /.header__navigation -->
         </header> <!-- /.header -->
         <main class="main">
-            <section class="feature-posts">
-                <div class="row">
-                    <div class="hero-carousel">
-                        <div class="hero-carousel__item">
-                            <div class="hero-carousel-slide">
-                                <div class="hero-carousel-slide__img bg__img">
-                                    <div>
-                                        <img src="images/posts/featured/featured-dummy-001.jpg" alt="featured dummy 001">
-                                    </div>
-                                </div> <!-- /.hero-carousel-slide__img -->
-                                <div class="hero-carousel-slide__overlay"></div>
-                                <div class="hero-carousel-slide__container">
-                                    <div class="hero-carousel-slide__post-category">
-                                        <h3 class="h3--accent"><a href="#">lifestyle</a></h3>
-                                    </div> <!-- /.hero-carousel-slide__post-category --> 
-                                    <div class="hero-carousel-slide__post-title">
-                                        <h2 class="h2--hero"><a href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></h2>
-                                    </div> <!-- /.hero-carousel-slide__post-title --> 
-                                    <div class="hero-carousel-slide__meta">
-                                        <iron-icon src="images/global/icons/clock-16px-accent.svg"></iron-icon>
-                                        <span>17 MAR 2016</span>
-                                    </div> <!-- /.hero-carousel-slide__post-meta -->
-                                </div> <!-- /.hero-carousel-slide__container -->
-                            </div> <!-- /.hero-carousel-slide -->
-                        </div> <!-- /.hero-carousel__item -->
-                    </div> <!-- /.hero-carousel -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="featured-list">
-                        <div class="featured-list__post">
-                            <div class="post__img--featured bg__img">
-                                <a href="#"><img src="images/posts/featured/featured-dummy-001.jpg" alt="featured dummy 001"></a>
-                            </div> <!-- /.post__img--featured -->
-                            <div class="post__card card">
-                                <div class="card__title">
-                                    <h3 class="h3--featured"><a href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></h3>
-                                </div>
-                                <div class="card__meta">
-                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
-                                    <span>17 MAR 2016</span>
-                                </div> <!-- /.card__meta -->
-                            </div> <!-- /.post__card -->
-                        </div> <!-- /.featured-list__post -->
-                        <div class="featured-list__post">
-                            <div class="post__img--featured bg__img">
-                                <a href="#"><img src="images/posts/featured/featured-dummy-002.jpg" alt="featured dummy 002"></a>
-                            </div> <!-- /.post__img--featured -->
-                            <div class="post__card card">
-                                <div class="card__title">
-                                    <h3 class="h3--featured"><a href="#">Facts about National Parks all around The World</a></h3>
-                                </div>
-                                <div class="card__meta">
-                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
-                                    <span>20 FEB 2016</span>
-                                </div> <!-- /.card__meta -->
-                            </div> <!-- /.post__card -->
-                        </div> <!-- /.featured-list__post -->
-                        <div class="featured-list__post">
-                            <div class="post__img--featured bg__img">
-                                <a href="#"><img src="images/posts/featured/featured-dummy-003.jpg" alt="featured dummy 003"></a>
-                            </div> <!-- /.post__img--featured -->
-                            <div class="post__card card">
-                                <div class="card__title">
-                                    <h3 class="h3--featured"><a href="#">World’s Craziest Tasting Menus which You Simply have to try</a></h3>
-                                </div>
-                                <div class="card__meta">
-                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
-                                    <span>18 JAN 2016</span>
-                                </div> <!-- /.card__meta -->
-                            </div> <!-- /.post__card -->
-                        </div> <!-- /.featured-list__post -->
-                        <div class="featured-list__post">
-                            <div class="post__img--featured bg__img">
-                                <a href="#"><img src="images/posts/featured/featured-dummy-004.jpg" alt="featured dummy 004"></a>
-                            </div> <!-- /.post__img--featured -->
-                            <div class="post__card card">
-                                <div class="card__title">
-                                    <h3 class="h3--featured"><a href="#">Decoration Ideas for Your New Home Sweet Home</a></h3>
-                                </div>
-                                <div class="card__meta">
-                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
-                                    <span>12 JAN 2016</span>
-                                </div> <!-- /.card__meta -->
-                            </div> <!-- /.post__card -->
-                        </div> <!-- /.featured-list__post -->
-                        <div class="clearfix"></div>
-                    </div> <!-- /.featured-list -->
-                </div> <!-- /.row -->
-            </section> <!-- /.feature-posts -->
-            <!-- owl carousel for featured products -->
-            <div class="row">
-                <section class="featured-products">
-                    <div class="section-title">
-                        featured products
-                    </div> <!-- /.section-title -->
-                    <div class="carousel owl-carousel">
-                        <div class="carousel__item--alpha">
-                            <div class="carousel__img bg__img">
-                                <a href="#"><img src="images/products/original-ring.jpg" alt="Original Ring"></a>
-                            </div> <!-- /.carousel__img -->
-                            <div class="carousel__item-title">
-                                <h4 class="h4"><a href="#">Original Ring</a></h4>
-                            </div> <!-- /.carousel__item-title -->
-                        </div> <!-- /.carousel__item -->  
-                        <div class="carousel__item">
-                            <div class="carousel__img bg__img">
-                                <a href="#"><img src="images/products/premium-swinging-symmetry.jpg" alt="Premium Swinging Symmetry"></a>
-                            </div> <!-- /.carousel__img -->
-                            <div class="carousel__item-title">
-                                <h4 class="h4"><a href="#">Premium Swinging Symmetry</a></h4>
-                            </div> <!-- /.carousel__item-title -->  
-                        </div> <!-- /.carousel__item -->
-                        <div class="carousel__item">
-                            <div class="carousel__img bg__img">
-                                <a href="#"><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
-                            </div> <!-- /.carousel__img -->
-                            <div class="carousel__item-title">
-                                <h4 class="h4"><a href="#">Pinball Track Ring</a></h4>
-                            </div> <!-- /.carousel__item-title -->  
-                        </div> <!-- /.carousel__item -->
-                        <div class="carousel__item">
-                            <div class="carousel__img bg__img">
-                                <a href="#"><img src="images/products/joint-bracelet.jpg" alt="Joint Bracelet"></a>
-                            </div> <!-- /.carousel__img -->
-                            <div class="carousel__item-title">
-                                <h4 class="h4"><a href="#">Joint Bracelet</a></h4>
-                            </div> <!-- /.carousel__item-title -->  
-                        </div> <!-- /.carousel__item -->
-                        <div class="carousel__item--omega">
-                            <div class="product">
-                                <div class="carousel__img bg__img">
-                                    <a href="#"><img src="images/products/swinging-symmetry.jpg" alt="Swinging  Symmetry"></a>
-                                </div> <!-- /.carousel__img -->
-                                <div class="carousel__item-title">
-                                    <h4 class="h4"><a href="#">Swinging Symmetry</a></h4>
-                                </div> <!-- /.carousel__item-title -->
-                            </div> <!-- /.product -->  
-                        </div> <!-- /.carousel__item -->
-                    </div> <!-- /.carousel -->
-                </section> <!-- /.featured-products -->
-            </div> <!-- /.row -->
+            <!-- elements for sub pages -->
+            <div class="breadcrumb-bar">
+                <ol class="breadcrumb-bar__list h-list">
+                    <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link" href="#">Home</a></li>
+                    <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link--active" href="#">Lifestyle</a></li>
+                </ol>
+            </div> <!-- /.breadcrumb -->
+            <div class="page-opening">
+                <h1 class="page-opening__title h1--opening">lifestyle</h1>
+                <!--<div class="page-opening__count">28</div>-->
+            </div> <!-- /.page-opening -->
             <div class="row">
                 <section class="latest-articles">
-                    <div class="section-title--no-spacer">
-                        latest articles
-                    </div> <!-- /.section-title -->
                     <div class="row">
-                        <article class="post">
-                            <div class="post__label">
-                                <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
-                            </div> <!-- /.post__label -->
-                            <div class="post__img bg__img">
-                                <a href="#"><img src="images/posts/latest/latest-dummy-001.jpg" alt="Latest Post Dummy 001"></a>
-                            </div> <!-- /.post__img -->
+                        <article class="post--cat-lg--alpha">
+                            <a href="#" class="post__link--img">
+                                <div class="post--cat-lg__img bg__img">
+                                    <div class="post__img-overlay">
+                                        <img src="images/posts/latest/latest-dummy-001.jpg" alt="Latest Post Dummy 001">
+                                    </div>
+                                </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img -->
+                            <div class="post--cat-lg__wrap">
+                                <div class="post__title">
+                                    <h2 class="h2--cat-lg"><a href="#">Is The New Android Wear that good?</a></h3>
+                                </div> <!-- /.post__title -->
+                                <p class="post__excerpt--cat-lg">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
+                                </p> <!-- /.post__excerpt -->
+                                <div class="post__meta">
+                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
+                                    <span>12 MAR 2016</span>
+                                    <div class="read-more">
+                                        <iron-icon src="images/global/icons/read-16px-lighter.svg"></iron-icon>
+                                        <span><a href="#" class="read-more__link">read more</a></span>   
+                                    </div> <!-- /.read-more -->
+                                    <div class="clearfix"></div>
+                                </div> <!-- /.post__meta -->
+                            </div> <!-- /.post--cat-lg__wrap -->
+                        </article> <!-- /.post--cat-lg -->
+                        <article class="post--cat-lg">
+                            <a href="#" class="post__link--img">
+                                <div class="post--cat-lg__img bg__img">
+                                    <div class="post__img-overlay">
+                                        <img src="images/posts/latest/latest-dummy-001.jpg" alt="Latest Post Dummy 001">
+                                    </div>
+                                </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img -->
+                            <div class="post--cat-lg__wrap">
+                                <div class="post__title">
+                                    <h2 class="h2--cat-lg"><a href="#">Is The New Android Wear that good?</a></h3>
+                                </div> <!-- /.post__title -->
+                                <p class="post__excerpt--cat-lg">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
+                                </p> <!-- /.post__excerpt -->
+                                <div class="post__meta">
+                                    <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
+                                    <span>12 MAR 2016</span>
+                                    <div class="read-more">
+                                        <iron-icon src="images/global/icons/read-16px-lighter.svg"></iron-icon>
+                                        <span><a href="#" class="read-more__link">read more</a></span>   
+                                    </div> <!-- /.read-more -->
+                                    <div class="clearfix"></div>
+                                </div> <!-- /.post__meta -->
+                            </div> <!-- /.post--cat-lg__wrap -->
+                        </article> <!-- /.post--cat-lg -->
+                    </div> <!-- /.row -->
+                    <div class="row">
+                        <article class="post post--alpha">
+                            <a href="#" class="post__link--img">
+                                <div class="post__img bg__img">
+                                    <div class="post__img-overlay">
+                                        <img src="images/posts/latest/latest-dummy-001.jpg" alt="Latest Post Dummy 001">
+                                    </div>
+                                </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img -->
                             <div class="post__title">
                                 <h3 class="h3"><a href="#">Is The New Android Wear that good?</a></h3>
                             </div> <!-- /.post__title -->
-                            <p class="paragraph post__excerpt">
+                            <p class="post__excerpt">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni distinctio reprehenderit a necessitatibus? Earum ipsam ullam temporibus rerum fuga non. Omnis iusto debitis enim necessitatibus, accusantium? Id quo voluptatem excepturi!
                             </p> <!-- /.post__excerpt -->
                             <div class="post__meta">
@@ -247,12 +268,13 @@
                             </div> <!-- /.post__meta -->
                         </article> <!-- /.post -->
                         <article class="post">
-                            <div class="post__label">
-                                <h4 class="h4--reversed"><a class="post__cat-link" href="#">trending</a></h4>
-                            </div> <!-- /.post__label -->
-                            <div class="post__img bg__img">
-                                <a href="#"><img src="images/posts/latest/latest-dummy-002.jpg" alt="Latest Post Dummy 002"></a>
-                            </div> <!-- /.post__img -->
+                            <a href="#" class="post__link--img">
+                                <div class="post__img bg__img">
+                                    <div class="post__img-overlay">
+                                        <img src="images/posts/latest/latest-dummy-002.jpg" alt="Latest Post Dummy 002">
+                                    </div> <!-- /.post__img-overlay -->
+                                </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img --> 
                             <div class="post__title">
                                 <h3 class="h3"><a href="#">Top Five Places to have Breakfast in Berlin</a></h3>
                             </div> <!-- /.post__title -->
@@ -266,12 +288,13 @@
                         </article> <!-- /.post -->
                         <div class="clearfix visible-sm-block"></div>
                         <article class="post">
-                            <div class="post__label">
-                                <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
-                            </div> <!-- /.post__label -->
+                            <a href="#" class="post__link--img">
                             <div class="post__img bg__img">
-                                <a href="#"><img src="images/posts/latest/latest-dummy-003.jpg" alt="Latest Post Dummy 003"></a>
+                                <div class="post__img-overlay">
+                                    <img src="images/posts/latest/latest-dummy-003.jpg" alt="Latest Post Dummy 003">
+                                </div> <!-- /.post__img-overlay -->
                             </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img -->    
                             <div class="post__title">
                                 <h3 class="h3"><a href="#">What Your Working Desk shows about Your ersonality</a></h3>
                             </div> <!-- /.post__title -->
@@ -284,12 +307,13 @@
                             </div> <!-- /.post__meta --> 
                         </article> <!-- /.post -->
                         <article class="post">
-                            <div class="post__label">
-                                <h4 class="h4--reversed"><a class="post__cat-link" href="#">lifestyle</a></h4>
-                            </div> <!-- /.post__label -->
-                            <div class="post__img bg__img">
-                                <a href="#"><img src="images/posts/latest/latest-dummy-004.jpg" alt="Latest Post Dummy 004"></a>
-                            </div> <!-- /.post__img -->
+                            <a href="#" class="post__link--img">
+                                <div class="post__img bg__img">
+                                    <div class="post__img-overlay">
+                                        <img src="images/posts/latest/latest-dummy-004.jpg" alt="Latest Post Dummy 004">
+                                    </div> <!-- /.post__img-overlay -->
+                                </div> <!-- /.post__img -->
+                            </a> <!-- /.post__link--img -->
                             <div class="post__title">
                                 <h3 class="h3"><a href="#">How to find a Friend for Your Next Camping Adventure</a></h3>
                             </div> <!-- /.post__title -->
@@ -300,13 +324,8 @@
                                 <iron-icon src="images/global/icons/clock-16px.svg"></iron-icon>
                                 <span>27 FEB 2016</span>
                             </div> <!-- /.post__meta -->
-                        </article> <!-- /.post -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="center__btn">
-                            <a href="#" class="btn--default">load more posts</a>
-                        </div> <!-- /.center__btn -->
-                    </div> <!-- /.row -->
+                        </article> <!-- /.post --> 
+                    </div> <!-- /.row -->  
                 </section> <!-- /.latest-articles -->
                 <aside class="aside">
                     <div class="widget--alpha">
@@ -398,22 +417,22 @@
                         <div class="widget__gallery">
                             <ul class="gallery">
                                 <li class="gallery__item--product bg__img">
-                                    <a href=""><img src="images/products/original-ring.jpg" alt="Original Ring"></a>
+                                    <a href="#"><img src="images/products/original-ring.jpg" alt="Original Ring"></a>
                                 </li> <!-- /.gallery__item--product -->
                                 <li class="gallery__item--product bg__img">
-                                    <a href=""><img src="images/products/premium-swinging-symmetry.jpg" alt="Premium Swinging Symmetry"></a>
+                                    <a href="#"><img src="images/products/premium-swinging-symmetry.jpg" alt="Premium Swinging Symmetry"></a>
                                 </li> <!-- /.gallery__item--product -->
                                 <li class="gallery__item--product bg__img gallery__omega">
-                                    <a href=""><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
+                                    <a href="#"><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
                                 </li> <!-- /.gallery__item -->
                                 <li class="gallery__item--product bg__img">
-                                    <a href=""><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
+                                    <a href="#"><img src="images/products/pinball-track-ring.jpg" alt="Pinball Track Ring"></a>
                                 </li> <!-- /.gallery__item -->
                                 <li class="gallery__item--product bg__img">
-                                    <a href=""><img src="images/products/joint-bracelet.jpg" alt="Joint Bracelet"></a>
+                                    <a href="#"><img src="images/products/joint-bracelet.jpg" alt="Joint Bracelet"></a>
                                 </li> <!-- /.gallery__item -->
                                 <li class="gallery__item--product bg__img gallery__omega">
-                                    <a href=""><img src="images/products/swinging-symmetry.jpg" alt=""></a>
+                                    <a href="#"><img src="images/products/swinging-symmetry.jpg" alt=""></a>
                                 </li> <!-- /.gallery__item -->
                                 <li class="clearfix"></li>
                             </ul> <!-- /.gallery -->
@@ -456,39 +475,41 @@
                         </div> <!-- /.footer__social -->
                     </div> <!-- /.row -->
                     <div class="row">
+                        <!-- ### move instagrame-feed to header -->
+                        <!--
                         <div class="instagram-feed">
                             <ul class="gallery">
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/001.jpg" alt="001">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->
+                                </li> <!-- /.gallery__item--instagram 
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/002.jpg" alt="002">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->
+                                </li> <!-- /.gallery__item--instagram 
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/003.jpg" alt="003">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->
+                                </li> <!-- /.gallery__item--instagram 
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/004.jpg" alt="004">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->
+                                </li> <!-- /.gallery__item--instagram 
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/005.jpg" alt="005">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->
+                                </li> <!-- /.gallery__item--instagram 
                                 <li class="gallery__item--instagram bg__img">
                                     <div>
                                         <img src="images/instagram/008.jpg" alt="008">
                                     </div>
-                                </li> <!-- /.gallery__item--instagram -->   
-                            </ul> <!-- /.gallery -->       
+                                </li> <!-- /.gallery__item--instagram    
+                            </ul> <!-- /.gallery        
                         </div> <!-- /.instagram-feed -->
                     </div> <!-- /.row -->
                     <div class="row">
@@ -543,26 +564,30 @@
                 </div> <!-- /.footer-bottom__inner -->
             </section> <!-- /.footer-bottom -->
         </footer>
-		<!-- jquery -->
+        <!-- jquery -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <!--<script>window.jQuery || document.write("<script src="js/vendor/jquery-1.12.2.min.js"><\/script>")</script>-->
         <!-- bs - Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <!-- owl carousel js -->
         <script src="bower_components/owl/owl-carousel/owl.carousel.min.js"></script>
+        <!-- lazyload xt -->
+        <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.js"></script>
+        <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.bg.js"></script>
         <script>
             $(document).ready(function(){
                 //menu toggle
                 $(".navigation-header__toggle").click(function(){
+                    $(this).toggleClass("collapsed");
                     $(".main-navigation").toggleClass("is__open");
                 });
                 //replace imgs inside carousel with a background image
                 $(".bg__img img").each(function(){
                     var imgSrc = $(this).attr("src");
-                    $(this).parents().eq(1).css({'background-image' : 'url('+ imgSrc +')'});
+                    $(this).parents().eq(1).attr("data-bg", imgSrc);
                     $(this).remove();
                 });
-                //owl carousel
+                //owl carousel -- feature products
                 $(".owl-carousel").owlCarousel({
                     items: 5,
                     itemsDesktop: [1199,5],
@@ -574,9 +599,99 @@
                     itemsScaleUp: false,
                     navigation: false // turn on and off navigation
                 });
+                //owl carousel -- mega dropdown
+                $(".owl-carousel--dropdown").owlCarousel({
+                    items: 4,
+                    itemsDesktop: [1199,2],
+                    itemsDesktopSmall: [980,2],
+                    navigation: false,
+                    pagination: false,
+                    lazyLoad: true,
+                    loop: true,
+                });
+                $(".custom-control__btn").click(function(e){
+                    e.preventDefault();
+                });
+                // mega dropdown custom navigation
+                $("#custom-next").click(function(){
+                    $(".owl-carousel--dropdown").trigger("owl.next");
+                });
+                $("#custom-prev").click(function(){
+                    $(".owl-carousel--dropdown").trigger("owl.prev");
+                });
+                //owl carousel -- hero
+                $(".hero-carousel").owlCarousel({
+                    items:1,
+                    navigation: false,
+                    pagination: false
+                });
+                //hero custom navigation
+                $("#hero-custom-next").click(function(){
+                    $(".hero-carousel").trigger("owl.next");
+                });
+                $("#hero-custom-prev").click(function(){
+                    $(".hero-carousel").trigger("owl.prev");
+                });
+                /*** mega menu ***/
+                var megaStart = $(".main").offset();
+                $(".mega-dropdown__menu").css("top", megaStart.top - 2);
+                /*** mega menu helper function ***/
+                var timeOut = 0;
+                var hovering = false;
+                /***** Drop Down Menu Function *****/
+                function dropDownMenuFn(){
+                    $(".mega-dropdown__menu").hide();
+                    $(".mega-dropdown__toggle").on("mouseenter", function(){
+                        hovering = true;
+                        $(".mega-dropdown__menu").stop(true, true).slideDown(600);
+                        if(timeOut > 0){
+                            clearTimeout(timeOut);
+                        }
+                    })
+                    .on("mouseleave", function(){
+                        resetHover();
+                    });
+                    $(".mega-dropdown__menu").on("mouseenter", function(){
+                        hovering = true;
+                        startTimeout();
+                    })
+                    .on("mouseleave", function(){
+                        resetHover();
+                    });
+                };            
+                function startTimeout() {
+                    timeOut = setTimeout(function () {
+                        closeMenu();
+                    }, 1000);
+                };
+                function closeMenu() {
+                    if (!hovering) {
+                        $('.mega-dropdown__menu').stop(true, true).slideUp(500);
+                    }
+                };
+                function resetHover() {
+                    hovering = false;
+                    startTimeout();
+                };
+                dropDownMenuFn();
+                //on hover image interaction
+                function imgHover(){
+                    $(".post__img-overlay").hide();
+                    $(".post__link--img").hover(
+                        function(){
+                            $(this).find(".post__img-overlay").stop(true, true).fadeIn();
+                        }, function(){
+                            $(this).find(".post__img-overlay").stop(true, true).fadeOut();
+                        }
+                    );
+                }
+                imgHover();
+                $.extend($.lazyLoadXT, {
+                    
+                });
             });
         </script>
-		<!-- Google Analytics: change UA-XXXXX-X to be your site"s ID. 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site"s ID. 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
