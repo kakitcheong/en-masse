@@ -147,7 +147,7 @@ html{
 	margin-top: $el__spacer--xs;
 	@include respond-to(md-screen){
 		@include adjust-font-size-to(14px);
-		@include adjust-leading-to(4);
+		@include adjust-leading-to(4.5);
 	}
 	&--footer{
 		@extend .paragraph;
@@ -156,7 +156,7 @@ html{
 	&--opening{
 		@extend .h3;
 		@include adjust-font-size-to(22px);
-		@include adjust-leading-to(3);
+		@include adjust-leading-to(3.5);
 	}    
 }
 .meta{
@@ -167,5 +167,30 @@ html{
 	padding: 0 $el__spacer--xs/4;
 	&:hover{
 		color: $color__accent;
+	}
+}
+/*** 1.3 blockquote ***/
+blockquote{
+	@extend .h3;
+	@include adjust-font-size-to(22px);
+	@include adjust-leading-to(3.5);
+	font-style: italic;
+	position: relative;
+	border-top: $el__border;
+	border-bottom: $el__border;	
+	@include respond-to(md-screen){
+		padding: $el__spacer--sm 0 $el__spacer--sm*0.8 $el__spacer--lg;
+		margin-top: $el__spacer--sm;
+	}
+	&:before{
+		position: absolute;
+    top: -30px;
+    left: 0;
+    color: $color__grey--lighter;
+    content: '\201D';
+    @include adjust-font-size-to(140px);
+    line-height: 1.1em;
+    font-style: normal;
+    text-rendering: auto;
 	}
 }

@@ -12,3 +12,8 @@
 		color: $color__grey;
 	}
 }
+.carousel--in-post{
+	&__img{
+		height: em(200);
+	}		
+}

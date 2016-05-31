@@ -155,6 +155,24 @@ input[type="email"] {
 	@extend .pull--right;
 	text-transform: uppercase;
 }
+/*** meta ***/
+.meta{
+	&__author-avatar--post-header{
+		@extend .col-xs-2;
+		img{
+			@extend .pull--right;
+			width: 50%;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+	}
+	&__data--post-header{
+		@extend .col-xs-10;
+		box-sizing: border-box;
+		padding: 0 15px $el__spacer--xs 15px;
+		border-bottom: $el__border;	
+	}
+}
 /*** alternative logo ***/
 .logo-alt{
 	@extend .hidden-xs;

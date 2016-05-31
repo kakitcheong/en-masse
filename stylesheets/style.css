@@ -2374,22 +2374,22 @@ pre code {
 }
 
 /* line 39, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-.row, .post-content__section {
+.row {
   margin-left: -15px;
   margin-right: -15px;
 }
 /* line 14, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.row:before, .post-content__section:before, .row:after, .post-content__section:after {
+.row:before, .row:after {
   content: " ";
   display: table;
 }
 /* line 19, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.row:after, .post-content__section:after {
+.row:after {
   clear: both;
 }
 
 /* line 11, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .meta__author-avatar, .col-sm-2, .col-md-2, .mega-dropdown__item, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .aside, .col-lg-3, .col-xs-4, .col-sm-4, .form--footer, .col-md-4, .about--footer, .author__avatar, .sub-nav--footer, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .about--footer, .post, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .author__profile, .col-lg-8, .featured-products, .col-xs-9, .col-sm-9, .post-content, .col-md-9, .latest-articles, .col-lg-9, .col-xs-10, .meta__data, .col-sm-10, .featured-products, .col-md-10, .mega-dropdown__item--carousel, .post-content__text, .col-lg-10, .col-xs-11, .col-sm-11, .post-content__text, .col-md-11, .col-lg-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img, .form--footer, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .meta__author-avatar--post-header, .col-sm-2, .col-md-2, .mega-dropdown__item, .col-lg-2, .col-xs-3, .col-sm-3, .featured-list__post, .col-md-3, .aside, .col-lg-3, .col-xs-4, .col-sm-4, .form--footer, .col-md-4, .about--footer, .author__avatar, .sub-nav--footer, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .about--footer, .post, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .author__profile, .col-lg-8, .featured-products, .col-xs-9, .col-sm-9, .post-content, .col-md-9, .latest-articles, .col-lg-9, .col-xs-10, .meta__data--post-header, .col-sm-10, .featured-products, .col-md-10, .mega-dropdown__item--carousel, .post-content__text, .col-lg-10, .col-xs-11, .col-sm-11, .post-content__text, .col-md-11, .col-lg-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img--lg, .form--footer, .col-sm-12, .hero-carousel, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2397,7 +2397,7 @@ pre code {
 }
 
 /* line 27, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-xs-2, .meta__author-avatar, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .meta__data, .col-xs-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img, .form--footer {
+.col-xs-1, .col-xs-2, .meta__author-avatar--post-header, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .meta__data--post-header, .col-xs-11, .col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img--lg, .form--footer {
   float: left;
 }
 
@@ -2407,7 +2407,7 @@ pre code {
 }
 
 /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-2, .meta__author-avatar {
+.col-xs-2, .meta__author-avatar--post-header {
   width: 16.66667%;
 }
 
@@ -2447,7 +2447,7 @@ pre code {
 }
 
 /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-10, .meta__data {
+.col-xs-10, .meta__data--post-header {
   width: 83.33333%;
 }
 
@@ -2457,7 +2457,7 @@ pre code {
 }
 
 /* line 35, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img, .form--footer {
+.col-xs-12, .featured-list__post, .featured-products, .latest-articles, .aside, .instagram-feed, .about--footer, .post, .post--cat-lg, .post--cat-lg--alpha, .post-opening, .post-content, .post-content__text, .post-content__img--lg, .form--footer {
   width: 100%;
 }
 
@@ -4915,7 +4915,7 @@ tbody.collapse.in {
   background-clip: padding-box;
 }
 /* line 54, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu.pull-right, .dropdown-menu.pull--right, .dropdown-menu.navigation-header__cart, .navigation-header__cart.mega-dropdown__menu, .pull--right.mega-dropdown__menu, .meta__author-avatar img.mega-dropdown__menu, .mega-dropdown__menu.read-more, .meta__author-avatar img.dropdown-menu, .dropdown-menu.read-more, .pull-right.mega-dropdown__menu {
+.dropdown-menu.pull-right, .dropdown-menu.pull--right, .dropdown-menu.navigation-header__cart, .navigation-header__cart.mega-dropdown__menu, .pull--right.mega-dropdown__menu, .mega-dropdown__menu.read-more, .meta__author-avatar--post-header img.mega-dropdown__menu, .dropdown-menu.read-more, .meta__author-avatar--post-header img.dropdown-menu, .pull-right.mega-dropdown__menu {
   right: 0;
   left: auto;
 }
@@ -5007,7 +5007,7 @@ tbody.collapse.in {
 }
 
 /* line 173, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
-.pull-right > .dropdown-menu, .pull--right > .dropdown-menu, .navigation-header__cart > .dropdown-menu, .meta__author-avatar img > .dropdown-menu, .read-more > .dropdown-menu, .pull-right > .mega-dropdown__menu, .pull--right > .mega-dropdown__menu, .navigation-header__cart > .mega-dropdown__menu, .meta__author-avatar img > .mega-dropdown__menu, .read-more > .mega-dropdown__menu {
+.pull-right > .dropdown-menu, .pull--right > .dropdown-menu, .navigation-header__cart > .dropdown-menu, .read-more > .dropdown-menu, .meta__author-avatar--post-header img > .dropdown-menu, .pull-right > .mega-dropdown__menu, .pull--right > .mega-dropdown__menu, .navigation-header__cart > .mega-dropdown__menu, .read-more > .mega-dropdown__menu, .meta__author-avatar--post-header img > .mega-dropdown__menu {
   right: 0;
   left: auto;
 }
@@ -6985,8 +6985,8 @@ a.thumbnail.active {
 .media > .pull-right,
 .media > .pull--right,
 .media > .navigation-header__cart,
-.meta__author-avatar .media > img,
-.media > .read-more {
+.media > .read-more,
+.meta__author-avatar--post-header .media > img {
   padding-left: 10px;
 }
 
@@ -8538,7 +8538,7 @@ button.close {
 }
 
 /* line 15, ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss */
-.pull-right, .pull--right, .navigation-header__cart, .meta__author-avatar img, .read-more {
+.pull-right, .pull--right, .navigation-header__cart, .read-more, .meta__author-avatar--post-header img {
   float: right !important;
 }
 
@@ -9028,7 +9028,7 @@ html {
 
 /*** 1.1 heading styles ***/
 /* line 11, ../sass/_typography.scss */
-.h1, .h1--opening, .h1--single-opening, .h2, .h2--hero, .h2--cat-lg, .h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening {
+.h1, .h1--opening, .h1--single-opening, .h2, .h2--hero, .h2--cat-lg, .h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening, blockquote {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #292929;
@@ -9083,13 +9083,13 @@ html {
 }
 
 /* line 46, ../sass/_typography.scss */
-.h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening {
+.h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening, blockquote {
   font-size: 1.375em;
   line-height: 1.36364em;
 }
 @media only screen and (min-width: 62em) {
   /* line 46, ../sass/_typography.scss */
-  .h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening {
+  .h3, .h3--featured, .h3--author-name, .h3--author-name-meta, .h3--carousel, .paragraph--opening, blockquote {
     font-size: 1.5em;
     line-height: 1.25em;
     line-height: 1.125em;
@@ -9219,7 +9219,7 @@ html {
   .paragraph, .paragraph--footer, .post__excerpt, .post__excerpt--cat-lg {
     font-size: 0.875em;
     line-height: 1.28571em;
-    line-height: 1.5em;
+    line-height: 1.6875em;
   }
 }
 /* line 152, ../sass/_typography.scss */
@@ -9230,7 +9230,7 @@ html {
 .paragraph--opening {
   font-size: 1.375em;
   line-height: 1.36364em;
-  line-height: 1.125em;
+  line-height: 1.3125em;
 }
 
 /* line 162, ../sass/_typography.scss */
@@ -9247,6 +9247,38 @@ html {
 /* line 168, ../sass/_typography.scss */
 .ss-icon:hover {
   color: #C99E66;
+}
+
+/*** 1.3 blockquote ***/
+/* line 173, ../sass/_typography.scss */
+blockquote {
+  font-size: 1.375em;
+  line-height: 1.36364em;
+  line-height: 1.3125em;
+  font-style: italic;
+  position: relative;
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+}
+@media only screen and (min-width: 62em) {
+  /* line 173, ../sass/_typography.scss */
+  blockquote {
+    padding: 1.875em 0 1.5em 3.75em;
+    margin-top: 1.875em;
+  }
+}
+/* line 185, ../sass/_typography.scss */
+blockquote:before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  color: #E4E4E4;
+  content: '\201D';
+  font-size: 8.75em;
+  line-height: 1.02857em;
+  line-height: 1.1em;
+  font-style: normal;
+  text-rendering: auto;
 }
 
 /*** header layout ***/
@@ -9804,25 +9836,34 @@ last update: 31/03/2016
   margin-top: 3.75em;
 }
 
-/* line 126, ../sass/modules/_post.scss */
-.post-content {
-  margin-top: 1.875em;
+@media only screen and (min-width: 62em) {
+  /* line 126, ../sass/modules/_post.scss */
+  .post-content {
+    margin-top: 1.875em;
+  }
 }
-/* line 132, ../sass/modules/_post.scss */
+/* line 134, ../sass/modules/_post.scss */
 .post-content__section {
   margin-top: 1.875em;
 }
-
-/* line 143, ../sass/modules/_post.scss */
-.meta {
-  padding: 0 0 1em 0;
-  border-bottom: 1px solid #D4D4D4;
+@media only screen and (min-width: 62em) {
+  /* line 137, ../sass/modules/_post.scss */
+  .post-content__text {
+    margin-top: 1.875em;
+  }
 }
-/* line 148, ../sass/modules/_post.scss */
-.meta__author-avatar img {
-  width: 50%;
-  border-radius: 50%;
-  margin: 0 auto;
+@media only screen and (min-width: 62em) {
+  /* line 143, ../sass/modules/_post.scss */
+  .post-content__img, .post-content__img--lg {
+    margin-top: 1.875em;
+    height: 22.5em;
+  }
+}
+@media only screen and (min-width: 62em) {
+  /* line 152, ../sass/modules/_post.scss */
+  .post-content__gallery {
+    margin-top: 1.875em;
+  }
 }
 
 /* line 1, ../sass/modules/_card.scss */
@@ -9869,6 +9910,11 @@ last update: 31/03/2016
 /* line 10, ../sass/modules/_carousel.scss */
 .carousel__item-title {
   color: #555555;
+}
+
+/* line 16, ../sass/modules/_carousel.scss */
+.carousel--in-post__img {
+  height: 12.5em;
 }
 
 /* line 1, ../sass/modules/_widget.scss */
@@ -10164,6 +10210,20 @@ input[type="email"]::-webkit-input-placeholder {
 /* line 154, ../sass/modules/_elements.scss */
 .read-more {
   text-transform: uppercase;
+}
+
+/*** meta ***/
+/* line 162, ../sass/modules/_elements.scss */
+.meta__author-avatar--post-header img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+/* line 169, ../sass/modules/_elements.scss */
+.meta__data--post-header {
+  box-sizing: border-box;
+  padding: 0 15px 1em 15px;
+  border-bottom: 1px solid #D4D4D4;
 }
 
 /*** alternative logo ***/
