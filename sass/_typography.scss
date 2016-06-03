@@ -34,7 +34,7 @@ html{
 		@include trailer();
 	}
 }
-.h2--cat-lg{
+.h2--lg{
 	@extend .h2;
 	@include adjust-font-size-to(22px);
 	@include leader();
@@ -107,6 +107,13 @@ html{
 		letter-spacing: 0;
 	}
 }
+.h4--alt{
+	@extend .h4;
+	font-family: $heading__font-family;
+	@include adjust-font-size-to(16px);
+	@include adjust-leading-to(3);
+	letter-spacing: 0; 
+}
 .section-title{
 	@extend .h4, .pull--center;
 	color: $color__accent;
@@ -133,6 +140,12 @@ html{
 		right: 0;
 		bottom: em(-10);
 		margin: 0 auto;
+	}
+	&--share{
+		@extend .section-title, .text-center;
+		@include respond-to(md-screen){
+			text-align: center;
+		}
 	}
 	&--no-spacer{
 		@extend .section-title;

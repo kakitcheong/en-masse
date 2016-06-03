@@ -1,5 +1,10 @@
 .author{
 	margin-top: $el__spacer--xs;
+	&--opening{
+		margin-top: 0;
+		padding-bottom: $el__spacer--sm;
+		border-bottom: $el__border;
+	}
 	&--alpha{
 		@extend .author;
 			margin-top: 0;
@@ -12,8 +17,33 @@
 			border-radius: 50%;
 		}
 	}
+	&__avatar--opening{
+		@extend .col-xs-2;
+		box-sizing: border-box;
+		img{
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
 	&__profile{
 		@extend .col-md-8;
+	}
+	&__profile--opening{
+		@extend .col-xs-10;
+	}
+	&__name--opening{
+		display: inline-block;
+	}
+	&__title--opening{
+		display: inline-block;
+		margin-left: $el__spacer--xs*0.5;
+		.h4--author-title{
+			color: $color__accent;
+		}
+	}
+	&__email--opening{
+		font-family: $heading__font-family;
+		font-style: italic; 
 	}
 	&__social{
 		margin-top: $el__spacer--xs/2;

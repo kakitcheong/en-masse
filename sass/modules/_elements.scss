@@ -34,6 +34,10 @@
 		width: auto;
 	}
 }
+.h-list--lg{
+	@extend .h-list;
+	@include adjust-font-size-to(24px);
+}
 .v-list{
 	&__item{
 		text-align: left;
@@ -51,6 +55,49 @@
 		float: left;
 		margin-right: em(30);
 		@include adjust-leading-to(4);
+	}
+}
+/*** pagination ***/
+.pagination{
+	margin-top: $el__spacer--xs;
+		@include respond-to(md-screen){
+			margin-top: $el__spacer--md;
+		}
+	&__list{
+		@extend .h-list;
+	}
+	&__item{
+		@extend .pull--center;
+		background-color: $color__grey--dark;
+		display: block;
+		float: left;
+		margin: 0 $el__spacer--xs 0 0;
+		color: $color__wht;
+		@include transition(background-color, 0.8s, ease-out);
+		span, a{
+			@include adjust-font-size-to(14px);
+			position: relative;
+			display: inline-block;
+			width: em(36);
+			height: em(36);
+			line-height: em(36);
+			margin: 0;
+			padding: 0;
+		}
+		a:hover{
+			color: $color__grey--dark;
+		}
+	}
+	&__item:hover{
+		background-color: $color__accent;
+		@include transition(background-color, 0.6s, ease-in);
+	}
+	&__item--active{
+		@extend .pagination__item;
+		background-color: $color__accent;
+	}
+	&__item--next{
+		@extend .pagination__item;
 	}
 }
 /*** form ***/
@@ -143,11 +190,68 @@ input[type="email"] {
 	&__title{
 		color: $color__accent;
 	}
-	&__title:before{
+	&__title--category:before{
 		content: "All articles from ";
 	}
-	&__title:after{
+	&__title--category:after{
 		content: " category";
+	}
+	&__title--author:before{
+		content: "Author: ";
+	}
+	&__title--search:before{
+		content: "Search results for: "
+	}
+}
+/*** single navigation ***/
+.single-navigation{
+	width: 100%;
+	position: relative;
+	vertical-align: middle;
+	display: table;
+	table-layout: fixed;
+	clear: both;
+	&__prev{
+		text-align: right;
+		position: relative;
+		display: table-cell;
+		width: 50%;
+		box-sizing: border-box;
+		a{
+			width: 100%;
+		}
+	}
+	&__next{
+		text-align: left;
+		position: relative;
+		display: table-cell;
+		width: 50%;
+		box-sizing: border-box;
+		border-left: $el__border;
+		a{
+			width: 100%;
+		}
+	}
+	&__indicator{
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -2px;
+	}
+	&__post-title{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+    width: calc(100% - 1.5em);
+    padding: 0  $el__spacer--xs;
+	}
+	&__post-title--prev{
+		@extend .single-navigation__post-title;
+			text-align: right;
+	}
+	&__post-title--next{
+		@extend .single-navigation__post-title;
+			text-align: left;
 	}
 }
 /*** read more ***/

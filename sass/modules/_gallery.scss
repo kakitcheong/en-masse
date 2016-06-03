@@ -14,16 +14,16 @@
 	}
 	&__item--instagram{
 		@extend .gallery__item;
-		width: em(123);
-		height: em(123);
+		width: em(120);
+		height: em(120);
 		margin-right: 0;
 		@include respond-to(md-screen){
-			width: em(165.666666667);
-			height: em(165.666666667);
+			width: em(117.5);
+			height: em(117.5);
 		}
 		@include respond-to(lg-screen){
-			width: em(190);
-			height: em(190);
+			width: em(142.5);
+			height: em(142.5);
 		}
 	}
 }

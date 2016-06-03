@@ -1,7 +1,7 @@
 .navigation-header{
 	margin-top: $el__spacer--xs;
 	@include respond-to(md-screen){
-		padding: $el__spacer--xs 0;
+		padding: $el__spacer--xs*0.8 0;
 		border-bottom: $el__border;
 		margin-top: 0;	
 	}
@@ -34,9 +34,11 @@
 	  }
 	}
 	&__soical{
-		@extend .visible--desktop;
+		@extend .visible--desktop, .pull--center;
 		display: inline-block;
+		@include adjust-font-size-to(13px);
 		color: $color__grey--light;
+		text-transform: uppercase; 
 	}
 	&__masthead{
 		@extend .pull--center;

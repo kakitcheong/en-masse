@@ -19,6 +19,7 @@
     "carousel": "~1.2.2",
     "iron-icon": "PolymerElements/iron-icon#~1.0.8",
     "bootstrap-sass": "~3.3.6",
-    "lazyloadxt": "~1.0.5"
+    "lazyloadxt": "~1.0.5",
+    "instafeed.js": "~1.4.1"
   }
 }

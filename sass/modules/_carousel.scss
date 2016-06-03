@@ -11,8 +11,14 @@
 		@extend .hidden-xs;
 		color: $color__grey;
 	}
+	&__item--alpha{
+		margin-left: 0;
+	}
 }
 .carousel--in-post{
+	&__item{
+		margin-left: $el__spacer--xs;
+	}
 	&__img{
 		height: em(200);
 	}		
