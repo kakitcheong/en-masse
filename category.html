@@ -177,7 +177,7 @@
                     <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link" href="#">Home</a></li>
                     <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link--active" href="#">Lifestyle</a></li>
                 </ol>
-            </div> <!-- /.breadcrumb -->
+            </div> <!-- /.breadcrumb-bar -->
             <div class="page-opening">
                 <h1 class="page-opening__title page-opening__title--category h1--opening">lifestyle</h1>
                 <!--<div class="page-opening__count">28</div>-->
@@ -239,7 +239,7 @@
                         </article> <!-- /.post--lg -->
                     </div> <!-- /.row -->
                     <div class="row">
-                        <article class="post post--alpha">
+                        <article class="post">
                             <a href="#" class="post__link--img">
                                 <div class="post__img bg__img">
                                     <div class="post__img-overlay">
@@ -539,11 +539,14 @@
                     $(".main-navigation").toggleClass("is__open");
                 });
                 //replace imgs inside carousel with a background image
-                $(".bg__img img").each(function(){
-                    var imgSrc = $(this).attr("src");
-                    $(this).parents().eq(1).attr("data-bg", imgSrc);
-                    $(this).remove();
-                });
+                function bgReplace(){
+                    $(".bg__img img").each(function(){
+                        var imgSrc = $(this).attr("src");
+                        $(this).parents().eq(1).attr("data-bg", imgSrc);
+                        $(this).remove();
+                    });
+                }
+                bgReplace();
                 //owl carousel -- feature products
                 $(".owl-carousel").owlCarousel({
                     items: 5,
@@ -644,7 +647,7 @@
                 }
                 imgHover();
                 $.extend($.lazyLoadXT, {
-                    
+                    onshow : {removeClass: 'lazy-hidden', addClass: 'lazy-loaded'}    
                 });
             });
         </script>

@@ -171,7 +171,14 @@
             </nav> <!-- /.header__navigation -->
         </header> <!-- /.header -->
         <main class="main">
-            <div class="post-opening" data-bg="images/posts/featured/featured-dummy-001.jpg">
+            <div class="breadcrumb-bar">
+                <ol class="breadcrumb-bar__list h-list">
+                    <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link" href="#">Home</a></li>
+                    <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link" href="#">Lifestyle</a></li>
+                    <li class="breadcrumb-bar__item h-list__item"><a class="breadcrumb-bar__link--active" href="#">Are Fashion Trends from Early 2000s making a Come-Back?</a></li>
+                </ol>
+            </div> <!-- /.breadcrumb-bar -->
+            <div class="post-opening bg__img" data-bg="images/posts/featured/featured-dummy-001.jpg">
                 <div class="post-opening__container-outer">
                     <div class="post-opening__container-inner">
                         <h1 class="h1--single-opening">Are Fashion Trends from Early 2000s making a Come-Back?</h1>
@@ -249,6 +256,7 @@
                                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus.
                             </p>
                         </div> <!-- /.post-content__text -->
+                        <div class="clearfix"></div>
                     </div> <!-- /.post-content__section -->
                     <div class="post-content__social-share">
                         <div class="section-title--share">
@@ -571,7 +579,9 @@
                     loop: true,
                 });
                 $(".carousel--in-post").owlCarousel({
-                    items: 2
+                    items: 2,
+                    itemsDesktop: [1199,2],
+                    itemsDesktopSmall: [980,2]
                 });
                 $(".custom-control__btn").click(function(e){
                     e.preventDefault();
@@ -651,7 +661,7 @@
                 }
                 imgHover();
                 $.extend($.lazyLoadXT, {
-                    
+                    onshow : {removeClass: 'lazy-hidden', addClass: 'lazy-loaded'}    
                 });
                 var feed = new Instafeed({
                     get: "user",

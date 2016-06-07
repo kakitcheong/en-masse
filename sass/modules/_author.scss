@@ -2,8 +2,11 @@
 	margin-top: $el__spacer--xs;
 	&--opening{
 		margin-top: 0;
-		padding-bottom: $el__spacer--sm;
+		padding-bottom: $el__spacer--xs;
 		border-bottom: $el__border;
+		@include respond-to(sm-screen){
+			padding-bottom: $el__spacer--sm;
+		}
 	}
 	&--alpha{
 		@extend .author;
@@ -18,7 +21,7 @@
 		}
 	}
 	&__avatar--opening{
-		@extend .col-xs-2;
+		@extend .col-xs-4, .col-sm-2;
 		box-sizing: border-box;
 		img{
 			width: 100%;
@@ -29,7 +32,7 @@
 		@extend .col-md-8;
 	}
 	&__profile--opening{
-		@extend .col-xs-10;
+		@extend .col-xs-12, .col-sm-10;
 	}
 	&__name--opening{
 		display: inline-block;

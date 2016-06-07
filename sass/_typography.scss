@@ -15,12 +15,22 @@ html{
 }
 .h1--opening{
 	@extend .h1;
-	@include adjust-font-size-to(42px);
+	@include adjust-font-size-to(28px);
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(42px);
+	}
 }
 .h1--single-opening{
-	@extend .h1--opening;
+	@extend .h1;
 	color: $color__grey--lighter;
-	margin-top: $el__spacer--lg;
+	@include adjust-font-size-to(22px);
+	@include respond-to(sm-screen){
+		@include adjust-font-size-to(28px);
+	}
+	@include respond-to(md-screen){
+		@include adjust-font-size-to(42px);
+		margin-top: $el__spacer--lg;	
+	}
 }
 .h2--hero{
 	@extend .h2;
@@ -110,7 +120,7 @@ html{
 .h4--alt{
 	@extend .h4;
 	font-family: $heading__font-family;
-	@include adjust-font-size-to(16px);
+	@include adjust-font-size-to(18px);
 	@include adjust-leading-to(3);
 	letter-spacing: 0; 
 }
@@ -120,9 +130,6 @@ html{
 	text-transform: uppercase;
 	font-weight: 500;
 	margin-bottom: $el__spacer--xs;
-	@include respond-to(sm-screen){
-		text-align: left;
-	}
 	&--centered{
 		@extend .section-title, .text-center;
 		position: relative;
@@ -189,8 +196,10 @@ blockquote{
 	@include adjust-leading-to(3.5);
 	font-style: italic;
 	position: relative;
+	margin-top: $el__spacer--xs;
 	border-top: $el__border;
-	border-bottom: $el__border;	
+	border-bottom: $el__border;
+	padding: $el__spacer--xs $el__spacer--xs $el__spacer--xs $el__spacer--md;
 	@include respond-to(md-screen){
 		padding: $el__spacer--sm 0 $el__spacer--sm*0.8 $el__spacer--lg;
 		margin-top: $el__spacer--sm;
@@ -200,7 +209,9 @@ blockquote{
     top: -30px;
     left: 0;
     color: $color__grey--lighter;
-    content: '\201D';
+    @include respond-to(md-screen){
+    	content: '\201D';	
+    }
     @include adjust-font-size-to(140px);
     line-height: 1.1em;
     font-style: normal;

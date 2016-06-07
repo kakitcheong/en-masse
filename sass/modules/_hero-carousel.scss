@@ -8,7 +8,11 @@
 	&__item{
 		position: relative;
 	}
+	&__control-container{
+		position: relative;
+	}
 	&__control{
+		@extend .hidden-xs;
 		position: absolute;
 		right: 7%;
 		bottom: 10%;

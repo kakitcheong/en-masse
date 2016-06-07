@@ -151,6 +151,7 @@ input[type="email"] {
 		color: $color__wht;
 	}
 	&__btn{
+		@include adjust-font-size-to(14px);
 		padding: em(8) em(10);
 	}
 	&__btn:hover{
@@ -159,10 +160,14 @@ input[type="email"] {
 }
 /*** breadcrumb ***/
 .breadcrumb-bar{
+	@extend .hidden-xs;
 	&__list{
 		@extend .breadcrumb;
 		background-color: transparent;
-		padding: $el__spacer--xs $el__spacer--xs*1.2;
+		padding: 0 0 $el__spacer--xs/2 0;
+		@include respond-to(md-screen){
+			padding: $el__spacer--xs $el__spacer--xs*1.2;
+		}
 	}
 	&__item{
 
@@ -185,7 +190,10 @@ input[type="email"] {
 }
 /*** page-title ***/
 .page-opening{
-	padding: 0 0 $el__spacer--xs $el__spacer--xs*1.2 ;
+	padding: 0 0 $el__spacer--xs 0;
+	@include respond-to(md-screen){
+		padding: 0 0 $el__spacer--xs $el__spacer--xs*1.2 ;
+	}
 	border-bottom: $el__border;
 	&__title{
 		color: $color__accent;
@@ -256,22 +264,26 @@ input[type="email"] {
 }
 /*** read more ***/
 .read-more{
-	@extend .pull--right;
+	@extend .hidden-xs, .pull--right;
 	text-transform: uppercase;
+
 }
 /*** meta ***/
 .meta{
 	&__author-avatar--post-header{
-		@extend .col-xs-2;
+		@extend .hidden-xs, .col-sm-2;
 		img{
 			@extend .pull--right;
-			width: 50%;
+			width: 70%;
 			border-radius: 50%;
 			margin: 0 auto;
+			@include respond-to(md-screen){
+				width: 50%;	
+			}			
 		}
 	}
 	&__data--post-header{
-		@extend .col-xs-10;
+		@extend .col-xs-12, .col-sm-10;
 		box-sizing: border-box;
 		padding: 0 15px $el__spacer--xs 15px;
 		border-bottom: $el__border;	
